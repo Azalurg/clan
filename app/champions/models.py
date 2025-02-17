@@ -78,7 +78,22 @@ class Champion(Entity, AttributesMixin, table=True):
             else:
                 self.free_attribute_points += 5
 
-            # TODO: Finish it
+            main_attributes = [
+                self.race.main_attribute.value,
+                self.character_class.main_attribute.value,
+                self.profession.main_attribute.value,
+            ]
+            secondary_attributes = [
+                self.race.secondary_attribute.value,
+                self.character_class.secondary_attribute.value,
+                self.profession.secondary_attribute.value,
+            ]
+
+            for attribute in main_attributes:
+                setattr(self, attribute, getattr(self, attribute) + 2)
+
+            for attribute in secondary_attributes:
+                setattr(self, attribute, getattr(self, attribute) + 1)
 
             if self.level <= 70:
                 self.experience_to_next_level += self.level * 2 + 7

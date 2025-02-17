@@ -24,26 +24,37 @@ def load_txt(file_name):
 
 
 def seed_table(model, data):
-    with Session(engine) as session:  # Use context manager for session
+    with Session(engine) as local_session:  # Use context manager for session
         for entry in data:
-            if session.exec(select(model).where(model.name == entry["name"])).first():
+            if local_session.exec(
+                select(model).where(model.name == entry["name"])
+            ).first():
                 continue
             print(entry)
-            session.add(model(**entry))
-        session.commit()
+            local_session.add(model(**entry))
+        local_session.commit()
 
 
-def create_random_champion(new_name, races_in, classes_in, professions_in):
-    with Session(engine) as session:
-        if session.exec(select(Champion).where(Champion.name == new_name)).first():
+def create_random_champion(new_name):
+    with Session(engine) as local_session:
+        if local_session.exec(
+            select(Champion).where(Champion.name == new_name)
+        ).first():
             return
 
-        race = random.choice(races_in)
-        character_class = random.choice(classes_in)
-        profession = random.choice(professions_in)
+        races = local_session.exec(select(Race)).all()
+        classes = local_session.exec(select(CharacterClass)).all()
+        professions = local_session.exec(select(Profession)).all()
+
+        race = random.choice(races)
+        character_class = random.choice(classes)
+        profession = random.choice(professions)
 
         experience = (
-            random.randint(1, 20) * random.randint(1, 20) * random.randint(1, 20)
+            random.randint(1, 25)
+            * random.randint(1, 25)
+            * random.randint(1, 25)
+            * random.randint(1, 25)
         )
 
         champion = Champion(
@@ -51,6 +62,9 @@ def create_random_champion(new_name, races_in, classes_in, professions_in):
             race_id=race.id,
             character_class_id=character_class.id,
             profession_id=profession.id,
+            race=race,
+            character_class=character_class,
+            profession=profession,
             level=1,
             experience=experience,
         )
@@ -60,10 +74,11 @@ def create_random_champion(new_name, races_in, classes_in, professions_in):
         value = random.randint(1, 20)
         while champion.free_attribute_points > value:
             attribute = random.choice(list(Attribute))
-            pass  # TODO: Finish it
+            setattr(champion, attribute.value, getattr(champion, attribute.value) + 1)
+            champion.free_attribute_points -= 1
 
-        session.add(champion)
-        session.commit()
+        local_session.add(champion)
+        local_session.commit()
         print(f"New champion {new_name}")
 
 
@@ -75,15 +90,12 @@ if __name__ == "__main__":
     classes_data = load_json("../data/classes.json")
     seed_table(CharacterClass, classes_data)
 
-    professions_data = load_json("../data/raw/professions.txt")
+    professions_data = load_json("../data/professions.json")
     seed_table(Profession, professions_data)
 
     champions_names = load_txt("../data/raw/names.txt")
 
-    with Session(engine) as session:
-        races = session.exec(select(Race)).all()
-        classes = session.exec(select(CharacterClass)).all()
-        professions = session.exec(select(Profession)).all()
+    random.shuffle(champions_names)
 
-    for name in champions_names:
-        create_random_champion(name.strip(), races, classes, professions)
+    for name in champions_names[:20]:
+        create_random_champion(name.strip())
