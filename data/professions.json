@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Alchemist",
+    "description": "Spends time in lab brewing potions.",
+    "rarity": 3,
+    "main_attribute": "wisdom",
+    "secondary_attribute": "dexterity"
+  },
+  {
+    "name": "Anthropologist",
+    "description": "Studies human cultures and societies.",
+    "rarity": 2,
+    "main_attribute": "intelligence",
+    "secondary_attribute": "wisdom"
+  },
+  {
+    "name": "Archaeologist",
+    "description": "Explores ruins and excavates ancient artifacts.",
+    "rarity": 2,
+    "main_attribute": "intelligence",
+    "secondary_attribute": "constitution"
+  },
+  {
+    "name": "Artisan",
+    "description": "Creates fine crafts and works of art.",
+    "rarity": 3,
+    "main_attribute": "dexterity",
+    "secondary_attribute": "intelligence"
+  },
+  {
+    "name": "Athlete",
+    "description": "Trains rigorously to achieve peak physical condition.",
+    "rarity": 4,
+    "main_attribute": "strength",
+    "secondary_attribute": "dexterity"
+  },
+  {
+    "name": "Blacksmith",
+    "description": "Forges weapons, armor, and tools.",
+    "rarity": 5,
+    "main_attribute": "strength",
+    "secondary_attribute": "dexterity"
+  },
+  {
+    "name": "Cartographer",
+    "description": "Creates maps of explored and unexplored lands.",
+    "rarity": 3,
+    "main_attribute": "intelligence",
+    "secondary_attribute": "wisdom"
+  },
+  {
+    "name": "Chef",
+    "description": "Prepares exquisite meals and delicacies.",
+    "rarity": 2,
+    "main_attribute": "dexterity",
+    "secondary_attribute": "wisdom"
+  },
+  {
+    "name": "Farmer",
+    "description": "Tends to crops and livestock to provide food.",
+    "rarity": 6,
+    "main_attribute": "constitution",
+    "secondary_attribute": "wisdom"
+  },
+  {
+    "name": "Fisherman",
+    "description": "Catches fish and gathers seafood.",
+    "rarity": 4,
+    "main_attribute": "dexterity",
+    "secondary_attribute": "strength"
+  },
+  {
+    "name": "Herbalist",
+    "description": "Gathers and studies plants for medicinal purposes.",
+    "rarity": 4,
+    "main_attribute": "wisdom",
+    "secondary_attribute": "intelligence"
+  },
+  {
+    "name": "Jeweler",
+    "description": "Crafts fine jewelry and gems.",
+    "rarity": 2,
+    "main_attribute": "dexterity",
+    "secondary_attribute": "charisma"
+  },
+  {
+    "name": "Lumberjack",
+    "description": "Cuts down trees and processes wood.",
+    "rarity": 5,
+    "main_attribute": "strength",
+    "secondary_attribute": "constitution"
+  },
+  {
+    "name": "Mason",
+    "description": "Builds structures and sculptures from stone.",
+    "rarity": 3,
+    "main_attribute": "strength",
+    "secondary_attribute": "dexterity"
+  },
+  {
+    "name": "Merchant",
+    "description": "Trades goods and negotiates deals.",
+    "rarity": 3,
+    "main_attribute": "charisma",
+    "secondary_attribute": "intelligence"
+  },
+  {
+    "name": "Miner",
+    "description": "Extracts valuable minerals from underground.",
+    "rarity": 5,
+    "main_attribute": "strength",
+    "secondary_attribute": "constitution"
+  },
+  {
+    "name": "Tanner",
+    "description": "Processes animal hides into leather goods.",
+    "rarity": 2,
+    "main_attribute": "dexterity",
+    "secondary_attribute": "constitution"
+  },
+  {
+    "name": "Weaver",
+    "description": "Creates textiles and fabrics from various materials.",
+    "rarity": 2,
+    "main_attribute": "dexterity",
+    "secondary_attribute": "wisdom"
+  }
+]

@@ -27,22 +27,23 @@ class PropertiesMixin:
     name: str = Field(unique=True)
     description: str | None = Field(default=None, nullable=True)
     rarity: int = Field(ge=1, le=10, default=2)
-
-
-class Race(Entity, AttributesMixin, PropertiesMixin, table=True):
-    pass
-
-
-class CharacterClass(Entity, AttributesMixin, PropertiesMixin, table=True):
-    pass
-
-
-class Profession(Entity, PropertiesMixin, table=True):
     main_attribute: Attribute = Field(default=Attribute.strength)
     secondary_attribute: Attribute = Field(default=Attribute.dexterity)
 
 
-class Player(Entity, AttributesMixin, table=True):
+class Race(Entity, PropertiesMixin, table=True):
+    pass
+
+
+class CharacterClass(Entity, PropertiesMixin, table=True):
+    pass
+
+
+class Profession(Entity, PropertiesMixin, table=True):
+    pass
+
+
+class Champion(Entity, AttributesMixin, table=True):
     name: str = Field(unique=True)
     title: str | None = Field(default=None, nullable=True)
     description: str | None = Field(default=None, nullable=True)
@@ -71,10 +72,14 @@ class Player(Entity, AttributesMixin, table=True):
         while self.experience >= self.experience_to_next_level:
             self.experience -= self.experience_to_next_level
             self.level += 1
+
             if self.level % 10 == 0:
                 self.free_attribute_points += 10 + self.level // 100
             else:
                 self.free_attribute_points += 5
+
+            # TODO: Finish it
+
             if self.level <= 70:
                 self.experience_to_next_level += self.level * 2 + 7
             elif self.level <= 150:

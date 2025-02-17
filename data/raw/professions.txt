@@ -1,4 +1,3 @@
-Acolyte
 Alchemist
 Anthropologist
 Archaeologist
@@ -6,14 +5,12 @@ Artisan
 Athlete
 Blacksmith
 Cartographer
-Charlatan
 Chef
 Farmer
 Fisherman
 Herbalist
 Jeweler
 Lumberjack
-Marine
 Mason
 Merchant
 Miner

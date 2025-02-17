@@ -4,11 +4,11 @@ import random
 from sqlmodel import select, Session
 
 from app.database import engine
-from app.players.models import (
+from app.champions.models import (
     Race,
     CharacterClass,
     Profession,
-    Player,
+    Champion,
     Attribute,
 )
 
@@ -33,21 +33,9 @@ def seed_table(model, data):
         session.commit()
 
 
-def emulate_data(raw_data):
-    return [
-        {
-            "name": profession,
-            "rarity": random.randint(1, 10),
-            "main_attribute": random.choice(list(Attribute)),
-            "secondary_attribute": random.choice(list(Attribute)),
-        }
-        for profession in raw_data
-    ]
-
-
-def create_random_player(new_name, races_in, classes_in, professions_in):
+def create_random_champion(new_name, races_in, classes_in, professions_in):
     with Session(engine) as session:
-        if session.exec(select(Player).where(Player.name == new_name)).first():
+        if session.exec(select(Champion).where(Champion.name == new_name)).first():
             return
 
         race = random.choice(races_in)
@@ -58,7 +46,7 @@ def create_random_player(new_name, races_in, classes_in, professions_in):
             random.randint(1, 20) * random.randint(1, 20) * random.randint(1, 20)
         )
 
-        player = Player(
+        champion = Champion(
             name=new_name,
             race_id=race.id,
             character_class_id=character_class.id,
@@ -67,11 +55,16 @@ def create_random_player(new_name, races_in, classes_in, professions_in):
             experience=experience,
         )
 
-        player.level_up()
+        champion.level_up()
 
-        session.add(player)
+        value = random.randint(1, 20)
+        while champion.free_attribute_points > value:
+            attribute = random.choice(list(Attribute))
+            pass  # TODO: Finish it
+
+        session.add(champion)
         session.commit()
-        print(f"New player {new_name}")
+        print(f"New champion {new_name}")
 
 
 if __name__ == "__main__":
@@ -82,16 +75,15 @@ if __name__ == "__main__":
     classes_data = load_json("../data/classes.json")
     seed_table(CharacterClass, classes_data)
 
-    professions_data = load_txt("../data/raw/professions.txt")
-    emulate_professions = emulate_data(professions_data)
-    seed_table(Profession, emulate_professions)
+    professions_data = load_json("../data/raw/professions.txt")
+    seed_table(Profession, professions_data)
 
-    players_names = load_txt("../data/raw/names.txt")
+    champions_names = load_txt("../data/raw/names.txt")
 
     with Session(engine) as session:
         races = session.exec(select(Race)).all()
         classes = session.exec(select(CharacterClass)).all()
         professions = session.exec(select(Profession)).all()
 
-    for name in players_names:
-        create_random_player(name.strip(), races, classes, professions)
+    for name in champions_names:
+        create_random_champion(name.strip(), races, classes, professions)
