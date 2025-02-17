@@ -8,7 +8,7 @@ app.include_router(players.router)
 
 if __name__ == "__main__":
     try:
-        print("ClanAPI")
+        print("Clan Manager")
         uvicorn.run(app=app)
     except Exception as e:
         print(f"❌ FastAPI start filed: {e}")
