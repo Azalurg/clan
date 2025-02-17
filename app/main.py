@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import uvicorn
 import app.players.router as players
 
-app = FastAPI(docs_url="/docs")
+app = FastAPI(docs_url="/docs", debug=True)
 
 app.include_router(players.router)
 
