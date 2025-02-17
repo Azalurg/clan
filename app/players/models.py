@@ -42,11 +42,6 @@ class Profession(Entity, PropertiesMixin, table=True):
     secondary_attribute: Attribute = Field(default=Attribute.dexterity)
 
 
-class Background(Entity, PropertiesMixin, table=True):
-    main_attribute: Attribute = Field(default=Attribute.strength)
-    secondary_attribute: Attribute = Field(default=Attribute.dexterity)
-
-
 class Player(Entity, AttributesMixin, table=True):
     name: str = Field(unique=True)
     title: str | None = Field(default=None, nullable=True)
@@ -63,14 +58,10 @@ class Player(Entity, AttributesMixin, table=True):
     profession_id: UUID | None = Field(
         default=None, foreign_key="profession.id", nullable=True
     )
-    background_id: UUID | None = Field(
-        default=None, foreign_key="background.id", nullable=True
-    )
 
     race: Race = Relationship()
     character_class: CharacterClass = Relationship()
     profession: Profession = Relationship()
-    background: Background = Relationship()
 
     def gain_experience(self, exp: int):
         self.experience += exp
