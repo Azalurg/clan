@@ -16,7 +16,7 @@ def remove_duplicates(input_file, output_file):
 
 
 if __name__ == "__main__":
-    input_filename = "names.txt"  # Change this to your input file
+    input_filename = "resources.txt"  # Change this to your input file
     output_filename = input_filename  # Change this to your desired output file
 
     remove_duplicates(input_filename, output_filename)

@@ -49,16 +49,14 @@ class Artefact(Entity, table=True):
     @property
     def score(self) -> int:
         item_quality_map = {
-            ItemQuality.common: 0.5,
-            ItemQuality.uncommon: 1,
-            ItemQuality.rare: 2,
-            ItemQuality.epic: 3,
-            ItemQuality.magnificent: 5,
-            ItemQuality.legendary: 8,
+            ItemQuality.common: 1,
+            ItemQuality.uncommon: 1.1,
+            ItemQuality.rare: 1.2,
+            ItemQuality.epic: 1.333,
+            ItemQuality.magnificent: 1.5,
+            ItemQuality.legendary: 2,
         }
 
         score = self.power * item_quality_map[self.quality]
 
-        if self.type in [ItemType.amulet, ItemType.ring, ItemType.talisman]:
-            score = score * 1.2
         return int(score)

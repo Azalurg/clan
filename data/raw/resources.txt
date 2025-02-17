@@ -1,0 +1,8 @@
+Bone
+Cloth
+Gem
+Glass
+Leather
+Metal
+Stone
+Wood
