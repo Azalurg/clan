@@ -1,0 +1,20 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "3336d6b855e2decece0d581d09b9dae8f02181a858ba03e3740b05f89bd1158b"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.12"
+        },
+        "sources": [
+            {
+                "name": "pip_conf_index_global",
+                "url": "https://artifactory.adtran.com/artifactory/api/pypi/pypi/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {},
+    "develop": {}
+}
