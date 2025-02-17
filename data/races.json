@@ -1,0 +1,54 @@
+[
+    {
+        "name": "Dwarf",
+        "description": "Hardy and resilient race, known for their craftsmanship and battle prowess.",
+        "rarity": 4,
+        "main_attribute": "constitution",
+        "secondary_attribute": "strength",
+        "strength": 2,
+        "dexterity": 1,
+        "constitution": 3,
+        "intelligence": 1,
+        "wisdom": 2,
+        "charisma": 1
+    },
+    {
+        "name": "Elf",
+        "description": "Graceful and intelligent beings with a deep connection to nature and magic.",
+        "rarity": 3,
+        "main_attribute": "dexterity",
+        "secondary_attribute": "intelligence",
+        "strength": 1,
+        "dexterity": 3,
+        "constitution": 1,
+        "intelligence": 2,
+        "wisdom": 2,
+        "charisma": 1
+    },
+    {
+        "name": "Human",
+        "description": "Versatile and adaptable, humans excel in various disciplines.",
+        "rarity": 2,
+        "main_attribute": "charisma",
+        "secondary_attribute": "wisdom",
+        "strength": 2,
+        "dexterity": 2,
+        "constitution": 2,
+        "intelligence": 2,
+        "wisdom": 2,
+        "charisma": 2
+    },
+    {
+        "name": "Kobold",
+        "description": "Small, nimble reptilian creatures, often underestimated but clever and resourceful.",
+        "rarity": 5,
+        "main_attribute": "dexterity",
+        "secondary_attribute": "intelligence",
+        "strength": 1,
+        "dexterity": 3,
+        "constitution": 1,
+        "intelligence": 2,
+        "wisdom": 1,
+        "charisma": 1
+    }
+]

@@ -1,0 +1,4 @@
+Dwarf
+Elf
+Human
+Kobold
