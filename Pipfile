@@ -11,6 +11,7 @@ psycopg2-binary = "*"
 uuid = "*"
 sqlmodel = "*"
 uvicorn = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
 
 [dev-packages]
 black = "*"
