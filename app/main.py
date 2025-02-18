@@ -1,10 +1,14 @@
+from time import sleep
+
 from fastapi import FastAPI
 import uvicorn
-import app.champions.router as champions
+from app.champions.router import router as champions_router
+from app.users.router import users_router
 
 app = FastAPI(docs_url="/docs", debug=True)
 
-app.include_router(champions.router)
+app.include_router(champions_router)
+app.include_router(users_router)
 
 if __name__ == "__main__":
     try:
@@ -23,6 +27,9 @@ if __name__ == "__main__":
                                                                                            ░░░░░░                                                         
             \n"""
         )
-        uvicorn.run(app=app)
+
+        sleep(0.2)
+        uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+
     except Exception as e:
         print(f"❌ FastAPI start filed: {e}")

@@ -1,6 +1,11 @@
+from typing import Annotated
+
 from dotenv import load_dotenv
 import os
-from sqlmodel import create_engine
+
+from fastapi import Depends
+from sqlmodel import create_engine, Session, SQLModel
+from contextlib import contextmanager
 
 load_dotenv()
 
@@ -13,4 +18,15 @@ DATABASE_URL = os.getenv(
     f"postgresql://{postgres_user}:{postgres_password}@localhost:5432/{postgres_database}",
 )
 
-engine = create_engine(DATABASE_URL)
+engine = create_engine(DATABASE_URL, echo=True)
+
+
+def get_session():
+    db = Session(engine)
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+SessionDep = Annotated[Session, Depends(get_session)]

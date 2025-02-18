@@ -25,6 +25,8 @@ if config.config_file_name is not None:
 
 from app.champions.models import *
 from app.resources.models import *
+from app.users.models import *
+
 target_metadata = SQLModel.metadata
 
 # other values from the config, defined by the needs of env.py,

@@ -1,4 +1,4 @@
-# https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/#hash-and-verify-the-passwords
+# https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt
 
 from passlib.context import CryptContext
 from sqlmodel import Field, Relationship
@@ -9,10 +9,11 @@ from app.models import Entity
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
-class Player(Entity, table=True):
+class User(Entity, table=True):
+    username: str = Field(unique=True, nullable=False)
     email: str = Field(unique=True, nullable=False)
     hashed_password: str = Field(nullable=False)
-    disabled: bool = Field(default=True)
+    is_active: bool = Field(default=False)
 
     # clan_id: UUID | None = Field(foreign_key="clan.id")
     #

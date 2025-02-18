@@ -12,6 +12,8 @@ uuid = "*"
 sqlmodel = "*"
 uvicorn = "*"
 passlib = {extras = ["bcrypt"], version = "*"}
+pyjwt = "*"
+python-multipart = "*"
 
 [dev-packages]
 black = "*"
