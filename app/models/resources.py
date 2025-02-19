@@ -1,12 +1,13 @@
 import enum
 from uuid import UUID
 
-from sqlmodel import Field
+from sqlmodel import Field, Column, JSON
 
 from app.models.shared import Entity
 
 
 class ItemType(enum.Enum):
+    resource = "resource"
     weapon = "weapon"
     armor = "armor"
     potion = "potion"
@@ -29,26 +30,16 @@ class ItemQuality(enum.Enum):
     epic = "epic"
     magnificent = "magnificent"
     legendary = "legendary"
+    artefact = "artefact"
 
 
 class Resource(Entity, table=True):
     name: str = Field(unique=True, nullable=False)
+    item_type: ItemType = Field(default=ItemType.resource)
+    recipe: dict[UUID, int] | None = Field(default=None, sa_column=Column(JSON))
 
 
 class Item(Entity, table=True):
-    name: str = Field(unique=True, nullable=False)
-    description: str | None = Field(default=None, nullable=True)
-    type: ItemType = Field(default=ItemType.weapon)
-    parent_id: UUID | None = Field(default=None, foreign_key="item.id", nullable=True)
-    main_resource_id: UUID | None = Field(
-        default=None, foreign_key="resource.id", nullable=True
-    )
-    secondary_resource_id: UUID | None = Field(
-        default=None, foreign_key="resource.id", nullable=True
-    )
-
-
-class Artefact(Entity, table=True):
     name: str = Field(unique=True, nullable=False)
     description: str | None = Field(default=None, nullable=True)
     power: int = Field(ge=1, le=9999, default=100)
@@ -59,11 +50,12 @@ class Artefact(Entity, table=True):
     def score(self) -> int:
         item_quality_map = {
             ItemQuality.common: 1,
-            ItemQuality.uncommon: 1.1,
-            ItemQuality.rare: 1.2,
-            ItemQuality.epic: 1.333,
-            ItemQuality.magnificent: 1.5,
+            ItemQuality.uncommon: 1.2,
+            ItemQuality.rare: 1.4,
+            ItemQuality.epic: 1.6,
+            ItemQuality.magnificent: 1.8,
             ItemQuality.legendary: 2,
+            ItemQuality.artefact: 3,
         }
 
         score = self.power * item_quality_map[self.quality]
