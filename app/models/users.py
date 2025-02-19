@@ -1,5 +1,3 @@
-# https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt
-
 from passlib.context import CryptContext
 from sqlmodel import Field, Relationship
 from uuid import UUID

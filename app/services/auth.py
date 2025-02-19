@@ -1,3 +1,5 @@
+# https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt
+
 from datetime import datetime, timezone, timedelta
 from typing import Optional
 
@@ -8,14 +10,14 @@ from fastapi.security import OAuth2PasswordBearer
 from sqlmodel import Session
 from passlib.context import CryptContext
 
-from app.database import SessionDep
+from app.database import SessionDep, get_session, engine
 from app.services.users import get_user_by_username
 
 secret_key = os.getenv("SECRET_KEY")
 algorithm = os.getenv("ALGORITHM")
 access_token_expire = int(os.getenv("ACCESS_TOKEN_EXPIRE", 15))
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="users/token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
@@ -33,7 +35,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     return jwt.encode(to_encode, secret_key, algorithm=algorithm)
 
 
-async def get_current_user(token: str = Depends(oauth2_scheme), session=SessionDep):
+async def get_current_user(session: SessionDep, token: str = Depends(oauth2_scheme)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail="Could not validate credentials",
