@@ -4,7 +4,7 @@ from passlib.context import CryptContext
 from sqlmodel import Field, Relationship
 from uuid import UUID
 
-from app.models import Entity
+from app.models.shared import Entity
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -16,7 +16,6 @@ class User(Entity, table=True):
     is_active: bool = Field(default=False)
 
     # clan_id: UUID | None = Field(foreign_key="clan.id")
-    #
     # clan: Clan = Relationship()
 
     def verify_password(self, password: str) -> bool:

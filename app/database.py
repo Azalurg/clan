@@ -1,13 +1,10 @@
 from typing import Annotated
 
-from dotenv import load_dotenv
 import os
 
 from fastapi import Depends
 from sqlmodel import create_engine, Session, SQLModel
-from contextlib import contextmanager
 
-load_dotenv()
 
 postgres_user = os.getenv("POSTGRES_USER")
 postgres_password = os.getenv("POSTGRES_PASSWORD")

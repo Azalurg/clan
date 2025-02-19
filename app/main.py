@@ -1,14 +1,19 @@
+import uvicorn
+
+from dotenv import load_dotenv
+from fastapi import FastAPI
 from time import sleep
 
-from fastapi import FastAPI
-import uvicorn
-from app.champions.router import router as champions_router
-from app.users.router import users_router
+
+load_dotenv()
+
+
+from app.routers import routers
 
 app = FastAPI(docs_url="/docs", debug=True)
 
-app.include_router(champions_router)
-app.include_router(users_router)
+for router in routers:
+    app.include_router(router)
 
 if __name__ == "__main__":
     try:

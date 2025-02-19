@@ -3,7 +3,8 @@ from uuid import UUID
 
 from sqlmodel import Field
 
-from app.models import Entity
+from app.models.shared import Entity
+
 
 class ItemType(enum.Enum):
     weapon = "weapon"
@@ -20,6 +21,7 @@ class ItemType(enum.Enum):
     grimoire = "grimoire"
     talisman = "talisman"
 
+
 class ItemQuality(enum.Enum):
     common = "common"
     uncommon = "uncommon"
@@ -28,16 +30,23 @@ class ItemQuality(enum.Enum):
     magnificent = "magnificent"
     legendary = "legendary"
 
+
 class Resource(Entity, table=True):
     name: str = Field(unique=True, nullable=False)
+
 
 class Item(Entity, table=True):
     name: str = Field(unique=True, nullable=False)
     description: str | None = Field(default=None, nullable=True)
     type: ItemType = Field(default=ItemType.weapon)
     parent_id: UUID | None = Field(default=None, foreign_key="item.id", nullable=True)
-    main_resource_id: UUID | None = Field(default=None, foreign_key="resource.id", nullable=True)
-    secondary_resource_id: UUID | None = Field(default=None, foreign_key="resource.id", nullable=True)
+    main_resource_id: UUID | None = Field(
+        default=None, foreign_key="resource.id", nullable=True
+    )
+    secondary_resource_id: UUID | None = Field(
+        default=None, foreign_key="resource.id", nullable=True
+    )
+
 
 class Artefact(Entity, table=True):
     name: str = Field(unique=True, nullable=False)

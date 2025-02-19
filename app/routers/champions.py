@@ -1,10 +1,9 @@
 from fastapi import APIRouter
 from sqlalchemy.orm import selectinload
 from sqlmodel import Session, select
-import json
 
 from app.database import engine
-from app.champions.models import Champion, Race
+from app.models.champions import Champion
 
 router = APIRouter(prefix="/champions", tags=["champions"])
 

@@ -4,7 +4,7 @@ import random
 from sqlmodel import select, Session
 
 from app.database import engine
-from app.champions.models import (
+from app.models.champions import (
     Race,
     CharacterClass,
     Profession,

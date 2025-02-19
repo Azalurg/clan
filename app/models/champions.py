@@ -2,7 +2,7 @@ import enum
 from uuid import UUID
 
 from sqlmodel import Field, Relationship
-from app.models import Entity
+from app.models.shared import Entity
 
 
 class Attribute(enum.Enum):
