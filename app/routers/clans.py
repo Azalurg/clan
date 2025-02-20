@@ -1,0 +1,21 @@
+from types import new_class
+
+from fastapi import Depends, APIRouter
+
+from app.database import SessionDep
+from app.models.users import User
+from app.models.clans import Clan
+
+from app.services.auth import get_current_user
+from app.services.clans import create_clan
+
+router = APIRouter(prefix="/clans", tags=["clans"])
+
+
+@router.post("/")
+def read_users_me(
+    name: str, session: SessionDep, current_user: User = Depends(get_current_user)
+):
+    new_clan = create_clan(session, current_user, name)
+
+    return {"message": f"Clan {name} created", "clan_id": new_clan.id}
