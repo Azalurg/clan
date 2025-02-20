@@ -8,12 +8,11 @@ from time import sleep
 load_dotenv()
 
 
-from app.routers import routers
+from app.routers.api import api_router
 
 app = FastAPI(docs_url="/docs", debug=True)
 
-for router in routers:
-    app.include_router(router)
+app.include_router(api_router, prefix="/api")
 
 if __name__ == "__main__":
     try:
