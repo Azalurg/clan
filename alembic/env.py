@@ -1,12 +1,15 @@
+from dotenv import load_dotenv
 from logging.config import fileConfig
-
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
-
 from alembic import context
 from sqlmodel import SQLModel
 
+load_dotenv()
+
 from app.database import DATABASE_URL
+from app.models import models
+
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -22,8 +25,6 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-
-from app.models import models
 
 target_metadata = SQLModel.metadata
 
