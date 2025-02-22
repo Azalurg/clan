@@ -37,6 +37,15 @@ class Resource(Entity, table=True):
     name: str = Field(unique=True, nullable=False)
     item_type: ItemType = Field(default=ItemType.resource)
     recipe: dict[UUID, int] | None = Field(default=None, sa_column=Column(JSON))
+    base_price: int = Field(ge=1, le=9999, default=1)
+
+    @property
+    def price (self) -> int:
+        price = self.base_price
+        for item_id, count in self.recipe.items():
+            item = self.session.get(Item, item_id)
+            price += item.price * count
+        return price
 
 
 class Item(Entity, table=True):
