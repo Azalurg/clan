@@ -28,3 +28,8 @@ def create_clan(
     session.commit()
 
     return new_clan
+
+def get_clans(session: Session, limit: int = 20):
+    clans = session.exec(select(Clan).limit(limit)).all()
+    return clans
+
