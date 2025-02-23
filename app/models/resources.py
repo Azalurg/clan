@@ -7,21 +7,22 @@ from app.models.shared import Entity
 
 
 class ItemType(enum.Enum):
-    resource = "resource"
+    material = "material"
     weapon = "weapon"
     armor = "armor"
     potion = "potion"
     scroll = "scroll"
-    ring = "ring"
-    amulet = "amulet"
+    jewelry = "jewelry"
     rod = "rod"
     wand = "wand"
-    staff = "staff"
     orb = "orb"
     tome = "tome"
     grimoire = "grimoire"
     talisman = "talisman"
-
+    clothing = "clothing"
+    extras = "extras"
+    instrument = "instrument"
+    tool = "tool"
 
 class ItemQuality(enum.Enum):
     common = "common"
@@ -35,7 +36,7 @@ class ItemQuality(enum.Enum):
 
 class Resource(Entity, table=True):
     name: str = Field(unique=True, nullable=False)
-    item_type: ItemType = Field(default=ItemType.resource)
+    item_type: ItemType = Field(default=ItemType.material)
     recipe: dict[UUID, int] | None = Field(default=None, sa_column=Column(JSON))
     base_price: int = Field(ge=1, le=9999, default=1)
 
