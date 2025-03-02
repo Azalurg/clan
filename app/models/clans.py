@@ -2,6 +2,9 @@ from uuid import UUID
 
 from sqlmodel import Field, Relationship, Field, Column, JSON
 
+# from app.models.champions import Champion
+# from app.models.items import Item
+# from app.models.missions import Mission
 # from app.models import User
 from app.models.shared import Entity
 
@@ -17,3 +20,7 @@ class Clan(Entity, table=True):
     description: str | None
 
     clan_warehouse: ClanWarehouse = Relationship()
+
+    # champions: list[Champion] = Relationship()
+    # missions: list[Mission] = Relationship()
+    # items: list[Item] = Relationship()

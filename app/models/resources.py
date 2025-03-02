@@ -1,8 +1,9 @@
 import enum
 from uuid import UUID
 
-from sqlmodel import Field, Column, JSON
+from sqlmodel import Field, Column, JSON, Relationship
 
+from app.models import Clan
 from app.models.shared import Entity
 
 
@@ -52,6 +53,10 @@ class Item(Entity, table=True):
     power: int = Field(ge=1, le=9999, default=100)
     type: ItemType = Field(default=ItemType.MISC)
     quality: ItemQuality = Field(default=ItemQuality.COMMON)
+
+    clan_id: UUID = Field(foreign_key="clan.id")
+
+    clan: Clan = Relationship(back_populates="items")
 
     @property
     def score(self) -> int:

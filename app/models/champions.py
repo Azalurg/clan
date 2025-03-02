@@ -2,6 +2,7 @@ import enum
 from uuid import UUID
 
 from sqlmodel import Field, Relationship
+
 from app.models.shared import Entity
 
 
@@ -59,6 +60,8 @@ class Champion(Entity, AttributesMixin, table=True):
     profession_id: UUID | None = Field(
         default=None, foreign_key="profession.id", nullable=True
     )
+    clan_id: UUID | None = Field(default=None, foreign_key="clan.id", nullable=True)
+    mission_id: UUID | None = Field(default=None, foreign_key="mission.id", nullable=True)
 
     race: Race = Relationship()
     character_class: CharacterClass = Relationship()
