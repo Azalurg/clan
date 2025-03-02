@@ -6,12 +6,12 @@ from app.models.shared import Entity
 
 
 class Attribute(enum.Enum):
-    strength = "strength"
-    dexterity = "dexterity"
-    constitution = "constitution"
-    intelligence = "intelligence"
-    wisdom = "wisdom"
-    charisma = "charisma"
+    STRENGTH = "STRENGTH"
+    DEXTERITY = "DEXTERITY"
+    CONSTITUTION = "CONSTITUTION"
+    INTELLIGENCE = "INTELLIGENCE"
+    WISDOM = "WISDOM"
+    CHARISMA = "CHARISMA"
 
 
 class AttributesMixin:
@@ -27,8 +27,8 @@ class PropertiesMixin:
     name: str = Field(unique=True)
     description: str | None = Field(default=None, nullable=True)
     rarity: int = Field(ge=1, le=10, default=2)
-    main_attribute: Attribute = Field(default=Attribute.strength)
-    secondary_attribute: Attribute = Field(default=Attribute.dexterity)
+    main_attribute: Attribute = Field(default=Attribute.STRENGTH)
+    secondary_attribute: Attribute = Field(default=Attribute.DEXTERITY)
 
 
 class Race(Entity, PropertiesMixin, table=True):

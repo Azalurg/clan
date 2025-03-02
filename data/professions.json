@@ -3,126 +3,126 @@
     "name": "Alchemist",
     "description": "Spends time in lab brewing potions.",
     "rarity": 3,
-    "main_attribute": "wisdom",
-    "secondary_attribute": "dexterity"
+    "main_attribute": "WISDOM",
+    "secondary_attribute": "DEXTERITY"
   },
   {
     "name": "Anthropologist",
     "description": "Studies human cultures and societies.",
     "rarity": 2,
-    "main_attribute": "intelligence",
-    "secondary_attribute": "wisdom"
+    "main_attribute": "INTELLIGENCE",
+    "secondary_attribute": "WISDOM"
   },
   {
     "name": "Archaeologist",
     "description": "Explores ruins and excavates ancient artifacts.",
     "rarity": 2,
-    "main_attribute": "intelligence",
-    "secondary_attribute": "constitution"
+    "main_attribute": "INTELLIGENCE",
+    "secondary_attribute": "CONSTITUTION"
   },
   {
     "name": "Artisan",
     "description": "Creates fine crafts and works of art.",
     "rarity": 3,
-    "main_attribute": "dexterity",
-    "secondary_attribute": "intelligence"
+    "main_attribute": "DEXTERITY",
+    "secondary_attribute": "INTELLIGENCE"
   },
   {
     "name": "Athlete",
     "description": "Trains rigorously to achieve peak physical condition.",
     "rarity": 4,
-    "main_attribute": "strength",
-    "secondary_attribute": "dexterity"
+    "main_attribute": "STRENGTH",
+    "secondary_attribute": "DEXTERITY"
   },
   {
     "name": "Blacksmith",
     "description": "Forges weapons, armor, and tools.",
     "rarity": 5,
-    "main_attribute": "strength",
-    "secondary_attribute": "dexterity"
+    "main_attribute": "STRENGTH",
+    "secondary_attribute": "DEXTERITY"
   },
   {
     "name": "Cartographer",
     "description": "Creates maps of explored and unexplored lands.",
     "rarity": 3,
-    "main_attribute": "intelligence",
-    "secondary_attribute": "wisdom"
+    "main_attribute": "INTELLIGENCE",
+    "secondary_attribute": "WISDOM"
   },
   {
     "name": "Chef",
     "description": "Prepares exquisite meals and delicacies.",
     "rarity": 2,
-    "main_attribute": "dexterity",
-    "secondary_attribute": "wisdom"
+    "main_attribute": "DEXTERITY",
+    "secondary_attribute": "WISDOM"
   },
   {
     "name": "Farmer",
     "description": "Tends to crops and livestock to provide food.",
     "rarity": 6,
-    "main_attribute": "constitution",
-    "secondary_attribute": "wisdom"
+    "main_attribute": "CONSTITUTION",
+    "secondary_attribute": "WISDOM"
   },
   {
     "name": "Fisherman",
     "description": "Catches fish and gathers seafood.",
     "rarity": 4,
-    "main_attribute": "dexterity",
-    "secondary_attribute": "strength"
+    "main_attribute": "DEXTERITY",
+    "secondary_attribute": "STRENGTH"
   },
   {
     "name": "Herbalist",
     "description": "Gathers and studies plants for medicinal purposes.",
     "rarity": 4,
-    "main_attribute": "wisdom",
-    "secondary_attribute": "intelligence"
+    "main_attribute": "WISDOM",
+    "secondary_attribute": "INTELLIGENCE"
   },
   {
     "name": "Jeweler",
     "description": "Crafts fine jewelry and gems.",
     "rarity": 2,
-    "main_attribute": "dexterity",
-    "secondary_attribute": "charisma"
+    "main_attribute": "DEXTERITY",
+    "secondary_attribute": "CHARISMA"
   },
   {
     "name": "Lumberjack",
     "description": "Cuts down trees and processes wood.",
     "rarity": 5,
-    "main_attribute": "strength",
-    "secondary_attribute": "constitution"
+    "main_attribute": "STRENGTH",
+    "secondary_attribute": "CONSTITUTION"
   },
   {
     "name": "Mason",
     "description": "Builds structures and sculptures from stone.",
     "rarity": 3,
-    "main_attribute": "strength",
-    "secondary_attribute": "dexterity"
+    "main_attribute": "STRENGTH",
+    "secondary_attribute": "DEXTERITY"
   },
   {
     "name": "Merchant",
     "description": "Trades goods and negotiates deals.",
     "rarity": 3,
-    "main_attribute": "charisma",
-    "secondary_attribute": "intelligence"
+    "main_attribute": "CHARISMA",
+    "secondary_attribute": "INTELLIGENCE"
   },
   {
     "name": "Miner",
     "description": "Extracts valuable minerals from underground.",
     "rarity": 5,
-    "main_attribute": "strength",
-    "secondary_attribute": "constitution"
+    "main_attribute": "STRENGTH",
+    "secondary_attribute": "CONSTITUTION"
   },
   {
     "name": "Tanner",
     "description": "Processes animal hides into leather goods.",
     "rarity": 2,
-    "main_attribute": "dexterity",
-    "secondary_attribute": "constitution"
+    "main_attribute": "DEXTERITY",
+    "secondary_attribute": "CONSTITUTION"
   },
   {
     "name": "Weaver",
     "description": "Creates textiles and fabrics from various materials.",
     "rarity": 2,
-    "main_attribute": "dexterity",
-    "secondary_attribute": "wisdom"
+    "main_attribute": "DEXTERITY",
+    "secondary_attribute": "WISDOM"
   }
 ]

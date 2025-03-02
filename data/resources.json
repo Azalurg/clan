@@ -4,259 +4,259 @@
     "name": "Bone",
     "base_price": 10,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "85c7f38f-2de5-44a8-bfb5-94b173390db0",
     "name": "Cotton",
     "base_price": 15,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "2e45e30f-6875-4d42-8e4c-9abded64c317",
     "name": "Flax",
     "base_price": 12,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "97f0f603-5aec-4be1-a17b-e28b08b12a6c",
     "name": "Hemp",
     "base_price": 14,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "da5bde4a-d08b-4248-a900-da1cae5b701a",
     "name": "Wool",
     "base_price": 18,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "49993966-de67-4ba0-b29f-4d299d8fa1d0",
     "name": "Silk",
     "base_price": 50,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "2862e0e3-acd1-4f52-ae51-11d0f21e6288",
     "name": "Amber",
     "base_price": 40,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "852b15f4-e805-4407-9cff-c055f2ae868d",
     "name": "Coral",
     "base_price": 35,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "59f0d685-3fe4-4afb-a92a-79ed5afcf4a2",
     "name": "Agate",
     "base_price": 30,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "cdee7f65-c5f9-4512-b7bf-7f98a08f17b0",
     "name": "Jade",
     "base_price": 45,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "69530076-8bac-479f-b40e-380e5460d62e",
     "name": "Ruby",
     "base_price": 200,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "4fc650f9-8524-42d8-b360-f42b73bab278",
     "name": "Sapphire",
     "base_price": 220,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "4b8a7d83-8884-4112-8714-795bb3e9ba0d",
     "name": "Emerald",
     "base_price": 210,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "ceccf60b-d7a0-4eb5-a775-7d8565d605ec",
     "name": "Obsidian",
     "base_price": 25,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "7c8742bd-5d4f-4ac3-a4b5-1b9afa3f5814",
     "name": "Glass",
     "base_price": 20,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "001045f5-79e5-4f3b-846f-bd18e5f65272",
     "name": "Iron",
     "base_price": 55,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "eada4e1b-6f1a-4761-8950-c6f00bc57bc1",
     "name": "Steel",
     "base_price": 80,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "aef6b0a2-2893-4b9d-9123-b237da28dd6b",
     "name": "Bronze",
     "base_price": 50,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "e3d8e31e-4f21-47cd-b403-afe5fcf33f0b",
     "name": "Copper",
     "base_price": 30,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "f3f2f322-3a3a-4a07-8fc0-346356873feb",
     "name": "Gold",
     "base_price": 500,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "bef076f4-adf0-4a69-b24b-21c9c4000130",
     "name": "Silver",
     "base_price": 250,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "e927bfa0-8f5f-4413-8da3-d8201aacffc8",
     "name": "Lead",
     "base_price": 20,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "cb76e978-ed7c-4121-864e-cbb51f62cc53",
     "name": "Tin",
     "base_price": 25,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "ed674425-8ceb-47d7-966e-a718be0f8021",
     "name": "Granite",
     "base_price": 15,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "ba72b37e-57b6-46cf-b635-5c38b6001c92",
     "name": "Marble",
     "base_price": 40,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "23e8927b-8893-4f0a-ab27-511a89bd974f",
     "name": "Sandstone",
     "base_price": 12,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "f8a1a65d-3446-4bef-b56d-f413f3175e82",
     "name": "Slate",
     "base_price": 14,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "7e0120a0-a318-4a7c-9b27-344e18bf24f7",
     "name": "Ashwood",
     "base_price": 20,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "a427577b-9b5a-4249-b001-9cd2a7218f53",
     "name": "Oakwood",
     "base_price": 25,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "8d980943-a8fd-4c27-a009-614172efc07f",
     "name": "Yewwood",
     "base_price": 35,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "1590d1f8-4a27-4924-a653-ad3baa16bf29",
     "name": "Pinewood",
     "base_price": 18,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "fcfceb78-1ade-464e-a0d1-a558d09be4a3",
     "name": "Ebony",
     "base_price": 60,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92",
     "name": "Mahogany",
     "base_price": 55,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "0b4de570-7865-4361-8719-af2ce2b431e3",
     "name": "Deerskin",
     "base_price": 28,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "ef32b76e-975c-4557-9def-ae93f7567d99",
     "name": "Cowhide",
     "base_price": 22,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "4427f546-736f-450e-9a73-14c6dacf65a9",
     "name": "Boarskin",
     "base_price": 30,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "aafd05c6-0a42-4e5f-a19b-499ded8b6a7c",
     "name": "Dragonscale",
     "base_price": 5000,
     "recipe": {},
-    "item_type": "material"
+    "item_type": "MATERIAL"
   },
   {
     "id": "d5e450d1-4f07-42c7-aaa7-f1be4f25235c",
@@ -266,7 +266,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "d823710a-1cc0-446d-b001-502180730056",
@@ -276,7 +276,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 5,
       "4427f546-736f-450e-9a73-14c6dacf65a9": 2
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "d8c4341d-2610-4699-a8f2-cb4759b64ea4",
@@ -286,7 +286,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 2,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "4d5eabfb-c065-4420-8a6b-0cac194848c4",
@@ -296,7 +296,7 @@
       "0b4de570-7865-4361-8719-af2ce2b431e3": 2,
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "921a451a-5964-4022-9da8-1d57a17c6c47",
@@ -306,7 +306,7 @@
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 2,
       "85c7f38f-2de5-44a8-bfb5-94b173390db0": 1
     },
-    "item_type": "extras"
+    "item_type": "TOOL"
   },
   {
     "id": "f171c2cb-633d-4bce-b7f4-6ded87fd668e",
@@ -316,7 +316,7 @@
       "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 1,
       "4427f546-736f-450e-9a73-14c6dacf65a9": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "5b2b10eb-1a8a-46de-8d63-dfa21b4c6941",
@@ -326,7 +326,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 2,
       "ef32b76e-975c-4557-9def-ae93f7567d99": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "c148ac8a-f794-4aaa-80da-49c88b44078e",
@@ -336,7 +336,7 @@
       "8d980943-a8fd-4c27-a009-614172efc07f": 2,
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 1
     },
-    "item_type": "weapon"
+    "item_type": "RANGED_WEAPON"
   },
   {
     "id": "c61fc2a3-6dbc-48ac-9540-e1a64907379c",
@@ -346,7 +346,7 @@
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1,
       "4b8a7d83-8884-4112-8714-795bb3e9ba0d": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "6771a45d-4e92-4ec4-a7c8-bc76973a33b0",
@@ -356,7 +356,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 4,
       "0b4de570-7865-4361-8719-af2ce2b431e3": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "abb73a33-06e8-4a66-82b8-f155ae9adac4",
@@ -366,7 +366,7 @@
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 3,
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "f4bce627-6a71-4f69-9e48-9b2e7d848f44",
@@ -376,7 +376,7 @@
       "a427577b-9b5a-4249-b001-9cd2a7218f53": 2,
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "871c1474-cc07-4456-b98f-4b75ec2f4b66",
@@ -386,7 +386,7 @@
       "a427577b-9b5a-4249-b001-9cd2a7218f53": 3,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2
     },
-    "item_type": "weapon"
+    "item_type": "RANGED_WEAPON"
   },
   {
     "id": "3965ada9-b096-4326-a6c8-6693fe2c9ab0",
@@ -395,7 +395,7 @@
     "recipe": {
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 2
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "9e2f9cf4-bde3-4269-815c-68c17db2e492",
@@ -404,7 +404,7 @@
     "recipe": {
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 3
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "c044345f-097a-4d9e-a0df-99a219a70804",
@@ -414,7 +414,7 @@
       "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92": 2,
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1
     },
-    "item_type": "instrument"
+    "item_type": "INSTRUMENT"
   },
   {
     "id": "767032d4-590f-4c5b-9ad8-de0f0d4a06e2",
@@ -424,7 +424,7 @@
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1,
       "fcfceb78-1ade-464e-a0d1-a558d09be4a3": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "3c3c9b8e-15b7-41b9-b9ef-d8cfda25e5a3",
@@ -434,7 +434,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "d02861d5-166f-4843-b080-188cb2fffd06",
@@ -444,7 +444,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 2,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "4f85cb88-ba8f-47da-8da4-75b34970ab8d",
@@ -453,7 +453,7 @@
     "recipe": {
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 2
     },
-    "item_type": "extras"
+    "item_type": "TOOL"
   },
   {
     "id": "59d3908e-e776-4a9a-9b1f-25358d1ca88a",
@@ -463,7 +463,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "69530076-8bac-479f-b40e-380e5460d62e": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "3acac77c-5d67-4cd9-ba4e-67bc4005d00f",
@@ -473,7 +473,7 @@
       "a427577b-9b5a-4249-b001-9cd2a7218f53": 3,
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 2
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "e5b0bc2e-05ce-45c9-b2cf-f2958967abd5",
@@ -483,7 +483,7 @@
       "85c7f38f-2de5-44a8-bfb5-94b173390db0": 3,
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "7cd03272-a2c8-40ac-8ea5-d18d15f72093",
@@ -492,7 +492,7 @@
     "recipe": {
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "73a149ba-79d2-4686-b3ae-03177eb31853",
@@ -502,7 +502,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 2,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "528ca262-724e-4458-958e-e42ff5e05594",
@@ -512,7 +512,7 @@
       "49993966-de67-4ba0-b29f-4d299d8fa1d0": 2,
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "a148b50c-f62b-4cc9-a74b-0a931ed4eca1",
@@ -522,7 +522,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1,
       "8d980943-a8fd-4c27-a009-614172efc07f": 2
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "4cee9c55-4e61-4c5d-866e-ab9f4453f73b",
@@ -532,7 +532,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 3,
       "fcfceb78-1ade-464e-a0d1-a558d09be4a3": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "9f2c2f43-4988-416c-bd3b-5854a7b3a509",
@@ -542,7 +542,7 @@
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2,
       "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92": 1
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "b02dbab2-e473-42c1-bf28-c9602d5759ab",
@@ -551,7 +551,7 @@
     "recipe": {
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 2
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "f232b162-9f6b-44cf-b3b3-bf9e510f2f6d",
@@ -561,7 +561,7 @@
       "fcfceb78-1ade-464e-a0d1-a558d09be4a3": 2,
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1
     },
-    "item_type": "wand"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "fa399948-91fb-4407-84ba-cea41b13a59c",
@@ -572,7 +572,7 @@
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 2,
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "79d2bc0a-af96-4250-af3e-ca56cc4e3234",
@@ -583,7 +583,7 @@
       "4427f546-736f-450e-9a73-14c6dacf65a9": 2,
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 2
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "46bf6263-8252-45fa-b51d-58945b476549",
@@ -593,7 +593,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 3,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "f7f96301-23f0-4557-ba5c-c6f1c9bbfdf5",
@@ -604,7 +604,7 @@
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 2,
       "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 1
     },
-    "item_type": "extras"
+    "item_type": "TOOL"
   },
   {
     "id": "bc1b1db9-19f4-4dc9-814a-b00a79249ebe",
@@ -615,7 +615,7 @@
       "49993966-de67-4ba0-b29f-4d299d8fa1d0": 1,
       "85c7f38f-2de5-44a8-bfb5-94b173390db0": 1
     },
-    "item_type": "extras"
+    "item_type": "TOOL"
   },
   {
     "id": "d8ad1178-3565-4ec9-9483-821d2e84dba2",
@@ -626,7 +626,7 @@
       "4427f546-736f-450e-9a73-14c6dacf65a9": 1,
       "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "2eb1d39a-51de-4766-95cb-f5cd77dd14f1",
@@ -637,7 +637,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1,
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "23223273-4a51-44a0-9ca1-a1f621add53d",
@@ -648,7 +648,7 @@
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 2,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "weapon"
+    "item_type": "RANGED_WEAPON"
   },
   {
     "id": "fd25e390-23a8-4001-aade-f4fbe53975ba",
@@ -659,7 +659,7 @@
       "4b8a7d83-8884-4112-8714-795bb3e9ba0d": 1,
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "e76f5482-5b91-4d4d-8377-9b35ad41ec3d",
@@ -670,7 +670,7 @@
       "0b4de570-7865-4361-8719-af2ce2b431e3": 2,
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "d6c82034-b30d-4454-b4ef-50688551910e",
@@ -681,7 +681,7 @@
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1,
       "4427f546-736f-450e-9a73-14c6dacf65a9": 2
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "b87cc3b2-ae37-4c3f-961e-fef85b3b704c",
@@ -692,7 +692,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "7474d9b1-7c46-4521-bd17-2407247aa620",
@@ -703,7 +703,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 2,
       "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1
     },
-    "item_type": "weapon"
+    "item_type": "RANGED_WEAPON"
   },
   {
     "id": "3aa22559-d448-49de-9fdc-6c3efc2833aa",
@@ -713,7 +713,7 @@
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "542c9abc-f4d0-45ff-88d7-33b2e6cc1694",
@@ -723,7 +723,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 3,
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "e3667f6a-738d-4be7-87de-bb67f17d465e",
@@ -734,7 +734,7 @@
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1,
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1
     },
-    "item_type": "instrument"
+    "item_type": "INSTRUMENT"
   },
   {
     "id": "2492cd59-ad44-430c-ad6f-b1a78066c000",
@@ -745,7 +745,7 @@
       "fcfceb78-1ade-464e-a0d1-a558d09be4a3": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "d0fdebef-742f-404c-a975-a5c0ba99cd94",
@@ -756,7 +756,7 @@
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "ff020ac2-288d-47eb-afd1-f0ed6c793289",
@@ -767,7 +767,7 @@
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1,
       "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "c8f4d3f7-d055-4b19-a98f-57bb097cee17",
@@ -777,7 +777,7 @@
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 2,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1
     },
-    "item_type": "extras"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "d01f0613-f4e2-4d4f-b284-24dad3ea3b00",
@@ -788,7 +788,7 @@
       "69530076-8bac-479f-b40e-380e5460d62e": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "25f05cd8-f22b-4e10-bbed-15f84f723ba3",
@@ -799,7 +799,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 2,
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 2
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "548d694e-1ef2-49f3-8561-22fbd98fa698",
@@ -810,7 +810,7 @@
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 1,
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "28df8834-785c-4ecd-bebe-c3d391e34ca8",
@@ -820,7 +820,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1,
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "eee4409d-0afd-43a7-81a8-74f85382250f",
@@ -831,7 +831,7 @@
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1,
       "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 1
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "13bec7a1-88df-420b-a8a6-e1f462931ce2",
@@ -842,7 +842,7 @@
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1,
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "7ea34b76-bf34-4f59-8425-cf1304d9534b",
@@ -853,7 +853,7 @@
       "8d980943-a8fd-4c27-a009-614172efc07f": 2,
       "4427f546-736f-450e-9a73-14c6dacf65a9": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "846a9f3f-f1e8-48ce-958c-f3f722c0a4f0",
@@ -864,7 +864,7 @@
       "fcfceb78-1ade-464e-a0d1-a558d09be4a3": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "defc4605-b832-4d0e-865a-f8bd6b6cd250",
@@ -875,7 +875,7 @@
       "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92": 1,
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "d6fd96d9-25da-43d9-b1c4-f7e4d2e01b15",
@@ -885,7 +885,7 @@
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 2,
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "1e2e65ee-92e3-4ae6-b39f-1e760ba2872d",
@@ -896,7 +896,7 @@
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1,
       "aafd05c6-0a42-4e5f-a19b-499ded8b6a7c": 1
     },
-    "item_type": "wand"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "49f7c80e-9ad8-4b90-a34e-d539d3ac097b",
@@ -908,7 +908,7 @@
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "b6c81507-f267-4215-9b74-2e807d19a830",
@@ -921,7 +921,7 @@
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "8a9d0175-8343-43c9-b9a5-28a92f62b6b8",
@@ -932,7 +932,7 @@
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 2,
       "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "871bd44e-53ff-4209-9c40-204e4c0f701a",
@@ -944,7 +944,7 @@
       "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 1,
       "85c7f38f-2de5-44a8-bfb5-94b173390db0": 1
     },
-    "item_type": "extras"
+    "item_type": "TOOL"
   },
   {
     "id": "c441bacd-a79a-4c12-b14f-1c5c04f6b933",
@@ -956,7 +956,7 @@
       "85c7f38f-2de5-44a8-bfb5-94b173390db0": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "extras"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "00a5c062-04f2-41d7-9131-1d5354f2768e",
@@ -968,7 +968,7 @@
       "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1,
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "45e67306-770b-477b-b1e2-d08750d4d3bb",
@@ -980,7 +980,7 @@
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "46b8ee24-014f-46ed-a70b-c6f497b56c5e",
@@ -992,7 +992,7 @@
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1,
       "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92": 1
     },
-    "item_type": "weapon"
+    "item_type": "RANGED_WEAPON"
   },
   {
     "id": "ac60b941-736f-4bd3-8e9e-061279055ea4",
@@ -1004,7 +1004,7 @@
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1,
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "80c249be-e554-4b74-9a95-6fcdd059b0d7",
@@ -1016,7 +1016,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "aafd05c6-0a42-4e5f-a19b-499ded8b6a7c": 2
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "507d76f9-a2a2-4ec0-ac26-79a3396fd649",
@@ -1028,7 +1028,7 @@
       "4427f546-736f-450e-9a73-14c6dacf65a9": 2,
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "0862266c-c8e8-4b93-b879-fd16e789c64c",
@@ -1040,7 +1040,7 @@
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2,
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "71e298e0-5485-41ab-9bc2-2faa23220043",
@@ -1052,7 +1052,7 @@
       "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1
     },
-    "item_type": "weapon"
+    "item_type": "RANGED_WEAPON"
   },
   {
     "id": "402af369-93c7-4105-a63d-91a6069ef587",
@@ -1063,7 +1063,7 @@
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 2,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "c4e323e2-318f-46a8-aa91-9aa491eb9fc1",
@@ -1074,7 +1074,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "7df702ac-27c5-40ec-9540-f19a13abe55f",
@@ -1086,7 +1086,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1
     },
-    "item_type": "instrument"
+    "item_type": "INSTRUMENT"
   },
   {
     "id": "477ca993-bc84-45ef-926f-6d11f40f7a6e",
@@ -1097,7 +1097,7 @@
       "fcfceb78-1ade-464e-a0d1-a558d09be4a3": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "6b1f44de-7cf1-4147-a08c-25d9ed738735",
@@ -1109,7 +1109,7 @@
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "90264e49-7a9d-4cdd-8ffe-050ff14b70ca",
@@ -1121,7 +1121,7 @@
       "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "962326f7-e7bc-4839-ad7d-bc3255cca74c",
@@ -1132,7 +1132,7 @@
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2,
       "49993966-de67-4ba0-b29f-4d299d8fa1d0": 1
     },
-    "item_type": "extras"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "4376d5c2-017c-40d8-a539-f282ffd280cd",
@@ -1144,7 +1144,7 @@
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "1137e514-83b9-4baf-9eb4-4f1908fe8d58",
@@ -1156,7 +1156,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 2,
       "aafd05c6-0a42-4e5f-a19b-499ded8b6a7c": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "fd40560b-619b-4ee6-a542-8876d9430cf8",
@@ -1168,7 +1168,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "49993966-de67-4ba0-b29f-4d299d8fa1d0": 2
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "f914061f-7906-49da-af5a-61f18e695712",
@@ -1179,7 +1179,7 @@
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "f12f8aec-c8fc-492c-a8c5-646e6ab5ea45",
@@ -1191,7 +1191,7 @@
       "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "56c6fc1f-24d0-49e0-b3ef-a890f4c0be19",
@@ -1203,7 +1203,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "69530076-8bac-479f-b40e-380e5460d62e": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "2e707ea3-4f95-4fe5-81d1-bb38b60e94dc",
@@ -1215,7 +1215,7 @@
       "4427f546-736f-450e-9a73-14c6dacf65a9": 1,
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "3cd81a5b-5f30-4f66-a010-207004f1127d",
@@ -1226,7 +1226,7 @@
       "fcfceb78-1ade-464e-a0d1-a558d09be4a3": 1,
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 3
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "13493355-b5d2-46b0-9c49-7060e6401787",
@@ -1237,7 +1237,7 @@
       "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92": 1,
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "3de760f6-ebc7-4614-a2bf-d160b17e5a60",
@@ -1248,7 +1248,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1,
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "62b99985-ed75-4efc-b589-5c5f2d3476b0",
@@ -1259,18 +1259,18 @@
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1,
       "aafd05c6-0a42-4e5f-a19b-499ded8b6a7c": 2
     },
-    "item_type": "wand"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "16c9ea71-0d03-411e-b44c-6f6518fcd484",
     "name": "Simple Leather Belt",
     "base_price": 300,
     "recipe": {
-        "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 2,
-        "4427f546-736f-450e-9a73-14c6dacf65a9": 1,
-        "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1
+      "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 2,
+      "4427f546-736f-450e-9a73-14c6dacf65a9": 1,
+      "e927bfa0-8f5f-4413-8da3-d8201aacffc8": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "d5274662-8c40-406e-a90e-6986a38e207b",
@@ -1279,7 +1279,7 @@
     "recipe": {
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 3
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "f6a58c35-5ec5-4fa9-be81-99706915b6fe",
@@ -1288,7 +1288,7 @@
     "recipe": {
       "a427577b-9b5a-4249-b001-9cd2a7218f53": 2
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "061f5eb2-89b9-41cd-aa8f-2498bdf1e011",
@@ -1298,7 +1298,7 @@
       "8d980943-a8fd-4c27-a009-614172efc07f": 2,
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 1
     },
-    "item_type": "weapon"
+    "item_type": "RANGED_WEAPON"
   },
   {
     "id": "4ac97bf5-f855-4e3f-a476-400c507c7101",
@@ -1307,7 +1307,7 @@
     "recipe": {
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 2
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "055c5d09-5840-4669-b6fe-050c4e3896b9",
@@ -1317,7 +1317,7 @@
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 2,
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "d22cb9c3-9f76-4840-a6f5-b4fc0a0538c7",
@@ -1327,7 +1327,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 3,
       "a427577b-9b5a-4249-b001-9cd2a7218f53": 2
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "ee9a0595-8380-4954-a0d6-b3d23b52c66e",
@@ -1336,7 +1336,7 @@
     "recipe": {
       "97f0f603-5aec-4be1-a17b-e28b08b12a6c": 2
     },
-    "item_type": "extras"
+    "item_type": "TOOL"
   },
   {
     "id": "44f4da8e-7c9d-4801-8a40-7a0e78cc636a",
@@ -1345,7 +1345,7 @@
     "recipe": {
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "extras"
+    "item_type": "TOOL"
   },
   {
     "id": "bdac511a-2ddd-4f17-b12a-8eb75fe9ead0",
@@ -1354,7 +1354,7 @@
     "recipe": {
       "aef6b0a2-2893-4b9d-9123-b237da28dd6b": 2
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "95d128df-897d-4b6c-871b-29954a097b37",
@@ -1364,7 +1364,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 2,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "55a0cd31-e71e-4ae9-aff5-912780459a76",
@@ -1373,7 +1373,7 @@
     "recipe": {
       "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92": 2
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "6771a45d-4e92-4ec4-a7c8-bc76973a33b0",
@@ -1382,7 +1382,7 @@
     "recipe": {
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 4
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "c5150966-e136-4454-af13-ea6e0a932abf",
@@ -1391,7 +1391,7 @@
     "recipe": {
       "85c7f38f-2de5-44a8-bfb5-94b173390db0": 2
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "d3c587e2-b368-423b-862e-e08d316ba3b4",
@@ -1400,7 +1400,7 @@
     "recipe": {
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 2
     },
-    "item_type": "wand"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "aeaa0a76-3008-4356-bd2c-6e8424a273e8",
@@ -1409,7 +1409,7 @@
     "recipe": {
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 2
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "e7c46361-fe22-4f20-ba6f-0b1a6a20fe99",
@@ -1418,7 +1418,7 @@
     "recipe": {
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 3
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "62a50f8a-bfd6-4d49-a8aa-718955c8425a",
@@ -1428,7 +1428,7 @@
       "49993966-de67-4ba0-b29f-4d299d8fa1d0": 3,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "109c59c5-a8bd-4a5a-9ad5-eed62477d860",
@@ -1437,7 +1437,7 @@
     "recipe": {
       "da5bde4a-d08b-4248-a900-da1cae5b701a": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "767032d4-590f-4c5b-9ad8-de0f0d4a06e2",
@@ -1447,7 +1447,7 @@
       "ceccf60b-d7a0-4eb5-a775-7d8565d605ec": 2,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "9213f451-ae41-4645-9c6f-f55365cc3935",
@@ -1457,7 +1457,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 2,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 1
     },
-    "item_type": "tool"
+    "item_type": "TOOL"
   },
   {
     "id": "efb27b7f-c6e9-47d5-a905-eaa49175ce2e",
@@ -1467,7 +1467,7 @@
       "a427577b-9b5a-4249-b001-9cd2a7218f53": 3,
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1
     },
-    "item_type": "armor"
+    "item_type": "ARMOR"
   },
   {
     "id": "c6ea2b6f-e7ab-4473-b566-cb17da561c8f",
@@ -1476,7 +1476,7 @@
     "recipe": {
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "3c3c9b8e-15b7-41b9-b9ef-d8cfda25e5a3",
@@ -1486,7 +1486,7 @@
       "f3f2f322-3a3a-4a07-8fc0-346356873feb": 1,
       "4fc650f9-8524-42d8-b360-f42b73bab278": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   },
   {
     "id": "9aec4cb0-e95b-4b0a-b359-cc91c01937b5",
@@ -1496,7 +1496,7 @@
       "8d980943-a8fd-4c27-a009-614172efc07f": 2,
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 1
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "1ed6eca9-62ff-4c2c-ac1c-58bbbc28385b",
@@ -1506,7 +1506,7 @@
       "49993966-de67-4ba0-b29f-4d299d8fa1d0": 2,
       "2e45e30f-6875-4d42-8e4c-9abded64c317": 1
     },
-    "item_type": "clothing"
+    "item_type": "CLOTHING"
   },
   {
     "id": "034b0075-e68d-48cf-bbf8-94d92db2d57c",
@@ -1516,7 +1516,7 @@
       "001045f5-79e5-4f3b-846f-bd18e5f65272": 3,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 2
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "818ff5f1-11a3-4539-ac0f-e49aa89008ca",
@@ -1526,7 +1526,7 @@
       "e59c3b0d-7866-40ed-a6ce-d9dcbd512b92": 2,
       "2862e0e3-acd1-4f52-ae51-11d0f21e6288": 1
     },
-    "item_type": "talisman"
+    "item_type": "MAGIC_ITEM"
   },
   {
     "id": "e9ecdfad-db8d-4c46-a97c-fb5972d23787",
@@ -1536,7 +1536,7 @@
       "eada4e1b-6f1a-4761-8950-c6f00bc57bc1": 4,
       "7e0120a0-a318-4a7c-9b27-344e18bf24f7": 2
     },
-    "item_type": "weapon"
+    "item_type": "MELEE_WEAPON"
   },
   {
     "id": "07eec629-4ad3-4877-b47f-bcd47543e18f",
@@ -1547,6 +1547,6 @@
       "69530076-8bac-479f-b40e-380e5460d62e": 1,
       "bef076f4-adf0-4a69-b24b-21c9c4000130": 1
     },
-    "item_type": "jewelry"
+    "item_type": "JEWELRY"
   }
 ]

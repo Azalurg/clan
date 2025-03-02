@@ -1,30 +1,30 @@
 [
-    {
-        "name": "Dwarf",
-        "description": "Hardy and resilient race, known for their craftsmanship and battle prowess.",
-        "rarity": 4,
-        "main_attribute": "constitution",
-        "secondary_attribute": "strength"
-    },
-    {
-        "name": "Elf",
-        "description": "Graceful and intelligent beings with a deep connection to nature and magic.",
-        "rarity": 3,
-        "main_attribute": "intelligence",
-        "secondary_attribute": "dexterity"
-    },
-    {
-        "name": "Human",
-        "description": "Versatile and adaptable, humans excel in various disciplines.",
-        "rarity": 2,
-        "main_attribute": "charisma",
-        "secondary_attribute": "wisdom"
-    },
-    {
-        "name": "Kobold",
-        "description": "Small, nimble reptilian creatures, often underestimated but clever and resourceful.",
-        "rarity": 5,
-        "main_attribute": "dexterity",
-        "secondary_attribute": "intelligence"
-    }
+  {
+    "name": "Dwarf",
+    "description": "Hardy and resilient race, known for their craftsmanship and battle prowess.",
+    "rarity": 4,
+    "main_attribute": "CONSTITUTION",
+    "secondary_attribute": "STRENGTH"
+  },
+  {
+    "name": "Elf",
+    "description": "Graceful and intelligent beings with a deep connection to nature and magic.",
+    "rarity": 3,
+    "main_attribute": "INTELLIGENCE",
+    "secondary_attribute": "DEXTERITY"
+  },
+  {
+    "name": "Human",
+    "description": "Versatile and adaptable, humans excel in various disciplines.",
+    "rarity": 2,
+    "main_attribute": "CHARISMA",
+    "secondary_attribute": "WISDOM"
+  },
+  {
+    "name": "Kobold",
+    "description": "Small, nimble reptilian creatures, often underestimated but clever and resourceful.",
+    "rarity": 5,
+    "main_attribute": "DEXTERITY",
+    "secondary_attribute": "INTELLIGENCE"
+  }
 ]
