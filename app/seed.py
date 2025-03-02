@@ -1,7 +1,10 @@
 import json
 import random
-
+from dotenv import load_dotenv
+from sqlalchemy.exc import ResourceClosedError
 from sqlmodel import select, Session
+
+load_dotenv()
 
 from app.database import engine
 from app.models.champions import (
@@ -11,6 +14,7 @@ from app.models.champions import (
     Champion,
     Attribute,
 )
+from app.models.resources import Resource
 
 
 def load_json(file_name):
@@ -83,19 +87,19 @@ def create_random_champion(new_name):
 
 
 if __name__ == "__main__":
-    # Load data and seed tables
     races_data = load_json("../data/races.json")
-    seed_table(Race, races_data)
-
     classes_data = load_json("../data/classes.json")
-    seed_table(CharacterClass, classes_data)
-
     professions_data = load_json("../data/professions.json")
+    resources_data = load_json("../data/resources.json")
+
+    seed_table(Race, races_data)
+    seed_table(CharacterClass, classes_data)
     seed_table(Profession, professions_data)
+    seed_table(Resource, resources_data)
 
-    champions_names = load_txt("../data/raw/names.txt")
-
-    random.shuffle(champions_names)
-
-    for name in champions_names[:20]:
-        create_random_champion(name.strip())
+    # champions_names = load_txt("../data/raw/names.txt")
+    #
+    # random.shuffle(champions_names)
+    #
+    # for name in champions_names[:20]:
+    #     create_random_champion(name.strip())
