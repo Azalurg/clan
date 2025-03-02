@@ -12,12 +12,14 @@ from app.services.clans import create_clan, get_clans
 
 router = APIRouter(prefix="/clans", tags=["clans"])
 
+
 @router.get("/")
 @handle_exceptions
 def get_clans_list(session: SessionDep):
     clans = get_clans(session)
 
     return {"clans": clans}
+
 
 @router.post("/")
 @handle_exceptions

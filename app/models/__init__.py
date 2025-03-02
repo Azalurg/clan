@@ -14,5 +14,5 @@ models = [
     Item,
     Resource,
     ItemType,
-    ItemQuality
+    ItemQuality,
 ]

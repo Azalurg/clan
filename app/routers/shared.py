@@ -1,6 +1,7 @@
 from functools import wraps
 from fastapi import HTTPException
 
+
 def handle_exceptions(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
@@ -12,4 +13,5 @@ def handle_exceptions(func):
             raise HTTPException(status_code=403, detail=str(e))
         except Exception as e:
             raise HTTPException(status_code=500, detail="Internal Server Error")
+
     return wrapper

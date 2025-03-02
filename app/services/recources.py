@@ -4,5 +4,5 @@ from app.models import Resource
 
 
 def get_resources(session: Session, limit: int = 20):
-    resources = session.exec(select(Resource)).all()
+    resources = session.exec(select(Resource).limit(limit)).all()
     return resources

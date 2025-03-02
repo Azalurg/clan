@@ -6,9 +6,6 @@ from sqlmodel import Field, Column, JSON
 from app.models.shared import Entity
 
 
-import enum
-
-
 class ItemType(enum.Enum):
     MATERIAL = "MATERIAL"
     MELEE_WEAPON = "MELEE_WEAPON"
