@@ -1,11 +1,22 @@
-from passlib.context import CryptContext
-from sqlmodel import Field, Relationship
+from typing import Optional
 from uuid import UUID
 
-from app.models.clans import Clan
+from passlib.context import CryptContext
+from sqlmodel import Field, Relationship
+
 from app.models.shared import Entity
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+
+class Clan(Entity, table=True):
+    name: str = Field(unique=True, nullable=False)
+    title: Optional[str] = None
+    description: Optional[str] = None
+
+    users: list["User"] = Relationship(back_populates="clan")
+    items: list["Item"] = Relationship(back_populates="clan")
+    warehouse: list["Warehouse"] = Relationship(back_populates="clan")
 
 
 class User(Entity, table=True):
@@ -14,12 +25,5 @@ class User(Entity, table=True):
     hashed_password: str = Field(nullable=False)
     is_active: bool = Field(default=False)
 
-    clan_id: UUID | None = Field(foreign_key="clan.id", unique=True)
-    clan: Clan = Relationship()
-
-    def verify_password(self, password: str) -> bool:
-        return pwd_context.verify(password, self.hashed_password)
-
-    @classmethod
-    def get_password_hash(cls, password: str) -> str:
-        return pwd_context.hash(password)
+    clan_id: Optional[UUID] = Field(default=None, foreign_key="clan.id", unique=True)
+    clan: Optional[Clan] = Relationship(back_populates="users")

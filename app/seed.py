@@ -1,7 +1,6 @@
 import json
 import random
 from dotenv import load_dotenv
-from sqlalchemy.exc import ResourceClosedError
 from sqlmodel import select, Session
 
 load_dotenv()
@@ -14,7 +13,7 @@ from app.models.champions import (
     Champion,
     Attribute,
 )
-from app.models.resources import Resource
+from app.models import Resource
 
 
 def load_json(file_name):
@@ -30,9 +29,7 @@ def load_txt(file_name):
 def seed_table(model, data):
     with Session(engine) as local_session:  # Use context manager for session
         for entry in data:
-            if local_session.exec(
-                select(model).where(model.name == entry["name"])
-            ).first():
+            if local_session.exec(select(model).where(model.name == entry["name"])).first():
                 continue
             print(entry)
             local_session.add(model(**entry))
@@ -41,9 +38,7 @@ def seed_table(model, data):
 
 def create_random_champion(new_name):
     with Session(engine) as local_session:
-        if local_session.exec(
-            select(Champion).where(Champion.name == new_name)
-        ).first():
+        if local_session.exec(select(Champion).where(Champion.name == new_name)).first():
             return
 
         races = local_session.exec(select(Race)).all()

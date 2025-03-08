@@ -1,10 +1,12 @@
 import enum
+from typing import Optional
 from uuid import UUID
 
+from sqlalchemy import UniqueConstraint
 from sqlmodel import Field, Column, JSON, Relationship
 
-from app.models import Clan
 from app.models.shared import Entity
+from app.models.users import Clan
 
 
 class ItemType(enum.Enum):
@@ -47,15 +49,22 @@ class Resource(Entity, table=True):
         return price
 
 
+class Warehouse(Entity, table=True):
+    clan_id: UUID = Field(foreign_key="clan.id")
+    resource_id: UUID = Field(foreign_key="resources.id")
+    quantity: int = Field(ge=0, nullable=False)
+
+    __table_args__ = (UniqueConstraint("clan_id", "resource_id"),)
+
+
 class Item(Entity, table=True):
     name: str = Field(unique=True, nullable=False)
-    description: str | None = Field(default=None, nullable=True)
+    description: Optional[str] = Field(default=None)
     power: int = Field(ge=1, le=9999, default=100)
     type: ItemType = Field(default=ItemType.MISC)
     quality: ItemQuality = Field(default=ItemQuality.COMMON)
 
     clan_id: UUID = Field(foreign_key="clan.id")
-
     clan: Clan = Relationship(back_populates="items")
 
     @property

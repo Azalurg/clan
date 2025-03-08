@@ -1,20 +1,25 @@
-from app.models.champions import Race, CharacterClass, Profession, Champion
-from app.models.clans import Clan, ClanWarehouse
-from app.models.resources import Resource, Item, ItemType, ItemQuality
-from app.models.users import User
-from app.models.missions import Mission
+from .champions import Race, CharacterClass, Profession, Champion
+from .inventory import Item, Resource, ItemType, ItemQuality
+from .market import MarketOffer, Exchange, Transaction
+from .missions import Mission, MissionParticipant, MissionReward
+from .users import Clan, User
+
 
 models = [
     Race,
     CharacterClass,
     Profession,
     Champion,
-    CharacterClass,
-    Clan,
-    User,
     Item,
     Resource,
     ItemType,
     ItemQuality,
+    MarketOffer,
+    Exchange,
+    Transaction,
     Mission,
+    MissionParticipant,
+    MissionReward,
+    Clan,
+    User,
 ]

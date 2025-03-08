@@ -1,21 +1,21 @@
 # https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt
 
+import os
 from datetime import datetime, timezone, timedelta
 from typing import Optional
 
 import jwt
-import os
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from sqlmodel import Session
 from passlib.context import CryptContext
 
-from app.database import SessionDep, get_session, engine
+from app.database import SessionDep
 from app.services.users import get_user_by_username
 
 secret_key = os.getenv("SECRET_KEY")
 algorithm = os.getenv("ALGORITHM")
-access_token_expire = int(os.getenv("ACCESS_TOKEN_EXPIRE", 15))
+access_token_expire = int(os.getenv("ACCESS_TOKEN_EXPIRE", "15"))
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="api/auth/login")
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

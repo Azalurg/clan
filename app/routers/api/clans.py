@@ -1,10 +1,7 @@
-from types import new_class
-
 from fastapi import Depends, APIRouter
 
 from app.database import SessionDep
-from app.models.users import User
-from app.models.clans import Clan
+from app.models import User
 from app.routers.shared import handle_exceptions
 
 from app.services.auth import get_current_user
@@ -23,9 +20,7 @@ def get_clans_list(session: SessionDep):
 
 @router.post("/")
 @handle_exceptions
-def crate_clan(
-    name: str, session: SessionDep, current_user: User = Depends(get_current_user)
-):
+def crate_clan(name: str, session: SessionDep, current_user: User = Depends(get_current_user)):
     new_clan = create_clan(session, current_user, name)
 
     return {"message": f"Clan '{name}' created", "clan_id": new_clan.id}

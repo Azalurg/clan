@@ -1,6 +1,6 @@
 import enum
+from typing import Optional
 from uuid import UUID
-
 from sqlmodel import Field, Relationship
 
 from app.models.shared import Entity
@@ -44,28 +44,25 @@ class Profession(Entity, PropertiesMixin, table=True):
     pass
 
 
-class Champion(Entity, AttributesMixin, table=True):
+class Champion(Entity, table=True):
     name: str = Field(unique=True)
-    title: str | None = Field(default=None, nullable=True)
-    description: str | None = Field(default=None, nullable=True)
+    title: Optional[str] = Field(default=None)
+    description: Optional[str] = Field(default=None)
     level: int = Field(default=1, ge=1)
     experience: int = Field(default=0, ge=0)
     experience_to_next_level: int = Field(default=10, ge=1)
     free_attribute_points: int = Field(default=1, ge=0)
 
-    race_id: UUID | None = Field(default=None, foreign_key="race.id", nullable=True)
-    character_class_id: UUID | None = Field(
-        default=None, foreign_key="characterclass.id", nullable=True
-    )
-    profession_id: UUID | None = Field(
-        default=None, foreign_key="profession.id", nullable=True
-    )
-    clan_id: UUID | None = Field(default=None, foreign_key="clan.id", nullable=True)
-    mission_id: UUID | None = Field(default=None, foreign_key="mission.id", nullable=True)
+    race_id: Optional[UUID] = Field(default=None, foreign_key="race.id")
+    character_class_id: Optional[UUID] = Field(default=None, foreign_key="characterclass.id")
+    profession_id: Optional[UUID] = Field(default=None, foreign_key="profession.id")
+    clan_id: Optional[UUID] = Field(default=None, foreign_key="clan.id")
+    mission_id: Optional[UUID] = Field(default=None, foreign_key="mission.id")
 
-    race: Race = Relationship()
-    character_class: CharacterClass = Relationship()
-    profession: Profession = Relationship()
+    race: Optional["Race"] = Relationship()
+    character_class: Optional["CharacterClass"] = Relationship()
+    profession: Optional["Profession"] = Relationship()
+    clan: Optional["Clan"] = Relationship(back_populates="champions")
 
     def gain_experience(self, exp: int):
         self.experience += exp

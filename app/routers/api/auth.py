@@ -3,9 +3,8 @@ from typing import Annotated
 
 from fastapi import Depends, APIRouter, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm
-from sqlmodel import Session
 
-from app.database import get_session, SessionDep
+from app.database import SessionDep
 from app.services.users import (
     get_user_by_username,
     get_user_by_email,
@@ -31,9 +30,7 @@ def register(username: str, email: str, password: str, session: SessionDep):
 
 
 @router.post("/login")
-def login(
-    form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep
-):
+def login(form_data: Annotated[OAuth2PasswordRequestForm, Depends()], session: SessionDep):
     user = authenticate_user(session, form_data.username, form_data.password)
     if not user:
         raise HTTPException(status_code=401, detail="Invalid credentials")
