@@ -36,7 +36,7 @@ class Race(Entity, PropertiesMixin, table=True):
     pass
 
 
-class CharacterClass(Entity, PropertiesMixin, table=True):
+class ChampionClass(Entity, PropertiesMixin, table=True):
     pass
 
 
@@ -44,7 +44,7 @@ class Profession(Entity, PropertiesMixin, table=True):
     pass
 
 
-class Champion(Entity, table=True):
+class Champion(Entity, AttributesMixin, table=True):
     name: str = Field(unique=True)
     title: Optional[str] = Field(default=None)
     description: Optional[str] = Field(default=None)
@@ -54,13 +54,13 @@ class Champion(Entity, table=True):
     free_attribute_points: int = Field(default=1, ge=0)
 
     race_id: Optional[UUID] = Field(default=None, foreign_key="race.id")
-    character_class_id: Optional[UUID] = Field(default=None, foreign_key="characterclass.id")
+    champion_class_id: Optional[UUID] = Field(default=None, foreign_key="championclass.id")
     profession_id: Optional[UUID] = Field(default=None, foreign_key="profession.id")
     clan_id: Optional[UUID] = Field(default=None, foreign_key="clan.id")
     mission_id: Optional[UUID] = Field(default=None, foreign_key="mission.id")
 
     race: Optional["Race"] = Relationship()
-    character_class: Optional["CharacterClass"] = Relationship()
+    champion_class: Optional["ChampionClass"] = Relationship()
     profession: Optional["Profession"] = Relationship()
     clan: Optional["Clan"] = Relationship(back_populates="champions")
 
@@ -80,20 +80,22 @@ class Champion(Entity, table=True):
 
             main_attributes = [
                 self.race.main_attribute.value,
-                self.character_class.main_attribute.value,
+                self.champion_class.main_attribute.value,
                 self.profession.main_attribute.value,
             ]
             secondary_attributes = [
                 self.race.secondary_attribute.value,
-                self.character_class.secondary_attribute.value,
+                self.champion_class.secondary_attribute.value,
                 self.profession.secondary_attribute.value,
             ]
 
             for attribute in main_attributes:
-                setattr(self, attribute, getattr(self, attribute) + 2)
+                a = attribute.lower()
+                setattr(self, a, getattr(self, a) + 2)
 
             for attribute in secondary_attributes:
-                setattr(self, attribute, getattr(self, attribute) + 1)
+                a = attribute.lower()
+                setattr(self, a, getattr(self, a) + 1)
 
             if self.level <= 70:
                 self.experience_to_next_level += self.level * 2 + 7

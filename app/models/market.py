@@ -16,7 +16,7 @@ class TransactionType(str, Enum):
 
 class MarketOffer(Entity, table=True):
     clan_id: UUID = Field(foreign_key="clan.id")
-    resource_id: UUID = Field(foreign_key="resources.id")
+    resource_id: UUID = Field(foreign_key="resource.id")
     quantity: int = Field(ge=1, nullable=False)
     price_per_unit: int = Field(ge=1, nullable=False)
 
@@ -25,7 +25,7 @@ class MarketOffer(Entity, table=True):
 
 
 class Exchange(Entity, table=True):
-    resource_id: UUID = Field(foreign_key="resources.id")
+    resource_id: UUID = Field(foreign_key="resource.id")
     price_per_unit: int = Field(ge=1, nullable=False)
     available_quantity: int = Field(ge=0, nullable=False)
 
@@ -40,5 +40,3 @@ class Transaction(Entity, table=True):
     price_per_unit: int = Field(ge=0, nullable=False)
 
     resource: Resource = Relationship()
-    seller_clan: Optional[Clan] = Relationship()
-    buyer_clan: Optional[Clan] = Relationship()

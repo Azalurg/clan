@@ -16,7 +16,7 @@ def get_champions():
             .order_by(Champion.level.desc())
             .options(
                 selectinload(Champion.race),
-                selectinload(Champion.character_class),
+                selectinload(Champion.champion_class),
                 selectinload(Champion.profession),
             )
             .limit(10)
@@ -27,7 +27,7 @@ def get_champions():
             "name": champ.name,
             "level": champ.level,
             "race": champ.race.name,
-            "class": champ.character_class.name,
+            "class": champ.champion_class.name,
             "profession": champ.profession.name,
         }
         for champ in champions

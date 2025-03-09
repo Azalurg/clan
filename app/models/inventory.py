@@ -51,8 +51,10 @@ class Resource(Entity, table=True):
 
 class Warehouse(Entity, table=True):
     clan_id: UUID = Field(foreign_key="clan.id")
-    resource_id: UUID = Field(foreign_key="resources.id")
+    resource_id: UUID = Field(foreign_key="resource.id")
     quantity: int = Field(ge=0, nullable=False)
+
+    clan: Optional["Clan"] = Relationship(back_populates="warehouse")  # Add this line
 
     __table_args__ = (UniqueConstraint("clan_id", "resource_id"),)
 

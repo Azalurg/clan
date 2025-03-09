@@ -10,7 +10,7 @@ load_dotenv()
 from app.database import DATABASE_URL
 from app.models import models
 
-print(models)
+print("\n-----\nStart Alembic\n-----\n")
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -82,3 +82,5 @@ if context.is_offline_mode():
     run_migrations_offline()
 else:
     run_migrations_online()
+
+print("\n-----\nEnd Alembic\n-----\n")

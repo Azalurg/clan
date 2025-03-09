@@ -17,6 +17,7 @@ class Clan(Entity, table=True):
     users: list["User"] = Relationship(back_populates="clan")
     items: list["Item"] = Relationship(back_populates="clan")
     warehouse: list["Warehouse"] = Relationship(back_populates="clan")
+    champions: list["Champion"] = Relationship(back_populates="clan")
 
 
 class User(Entity, table=True):
