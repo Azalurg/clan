@@ -13,7 +13,7 @@ from app.models.users import Clan
 class Mission(Entity, table=True):
     title: str = Field(unique=True, nullable=False)
     description: Optional[str] = None
-    level: int = Field(ge=1, le=9999, default=1)
+    level: int = Field(ge=1, le=9999, default=1)  # rename to power
 
     total_duration: int = Field(ge=1, le=100, default=1)  # W minutach lub godzinach
     start_time: Optional[datetime] = Field(default=None)  # Kiedy misja się zaczęła

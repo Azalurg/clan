@@ -1,3 +1,4 @@
+import numpy as np
 from sqlmodel import Session
 
 from app.models import Mission
@@ -32,7 +33,7 @@ items = [
     "dragon scale",
 ]
 
-actions_items = [
+item_actions = [
     "Find",
     "Destroy",
     "Recover",
@@ -53,7 +54,7 @@ actions_items = [
     "Offer",
 ]
 
-terms_items = [
+item_adjectives = [
     "lost",
     "ancient",
     "enchanted",
@@ -106,7 +107,7 @@ enemies = [
     "bone golem",
 ]
 
-actions_enemies = [
+enemy_actions = [
     "Defeat",
     "Slay",
     "Banish",
@@ -127,7 +128,7 @@ actions_enemies = [
     "Outwit",
 ]
 
-terms_enemies = [
+enemy_adjectives = [
     "dark",
     "evil",
     "mysterious",
@@ -178,7 +179,7 @@ locations = [
     "lost kingdom",
 ]
 
-actions_locations = [
+location_actions = [
     "Explore",
     "Enter",
     "Investigate",
@@ -199,7 +200,7 @@ actions_locations = [
     "Unravel",
 ]
 
-terms_locations = [
+location_adjective = [
     "mysterious",
     "dangerous",
     "enchanted",
@@ -224,7 +225,7 @@ terms_locations = [
     "illusionary",
 ]
 
-factions = [
+fractions = [
     "Brotherhood of Shadows",
     "Order of the Phoenix",
     "Crimson Legion",
@@ -240,86 +241,10 @@ factions = [
     "The Veiled Watchers",
 ]
 
-allies = [
-    "mysterious traveler",
-    "royal knight",
-    "rogue assassin",
-    "wandering sage",
-    "rebel leader",
-    "exiled prince",
-    "battle-hardened mercenary",
-    "cunning thief",
-    "wayward sorcerer",
-    "dragon rider",
-    "seer",
-    "elf archer",
-    "dwarven blacksmith",
-    "ghostly guardian",
-    "ancient oracle",
-]
+names = []
 
-disasters = [
-    "plague",
-    "earthquake",
-    "storm",
-    "flood",
-    "fire",
-    "drought",
-    "war",
-    "famine",
-    "celestial eclipse",
-    "demonic invasion",
-    "shadow uprising",
-    "blood moon",
-    "eternal winter",
-]
-
-obstacles = [
-    "cursed door",
-    "magical seal",
-    "riddle of the ancients",
-    "poisonous mist",
-    "shifting labyrinth",
-    "guardian golem",
-    "hidden passage",
-    "endless night",
-    "time loop",
-    "mind-breaking illusion",
-    "booby-trapped corridor",
-    "watchful gargoyle",
-    "phantom voices",
-    "unstable portal",
-]
-
-rewards = [
-    "immortality",
-    "forbidden knowledge",
-    "a kingdom",
-    "the favor of a god",
-    "a mythical beast companion",
-    "a legendary weapon",
-    "a lost spell",
-    "a seat among the gods",
-    "a chance to rewrite history",
-    "an unbreakable vow",
-    "the last wish",
-    "control over time",
-    "an ancient prophecy fulfilled",
-]
-
-mystical_forces = [
-    "the celestial alignment",
-    "the whispers of the void",
-    "the flow of mana",
-    "the balance of fate",
-    "the blood of titans",
-    "the heart of the world",
-    "the shattered reality",
-    "the echo of lost souls",
-    "the will of the ancients",
-    "the forgotten prophecy",
-    "the threads of destiny",
-]
+with open("../data/raw/names.txt") as file:
+    names = file.read().splitlines()
 
 person_actions = [
     "Befriend",
@@ -346,7 +271,6 @@ person_actions = [
     "Outwit",
     "Deceive",
     "Swindle",
-    "Prove your worth to",
 ]
 
 after_actions = [
@@ -372,72 +296,76 @@ after_actions = [
     "to rewrite history",
 ]
 
-names = [
-    "Alduin",
-    "Dagoth Ur",
-    "Harkon",
-    "Miraak",
-    "Molag Bal",
-    "Vyrthur",
-    "Noctis",
-    "Selene",
-    "Zareth",
-    "Eldrin",
-    "Vael",
-    "Ragnar",
-    "Malakar",
-    "Orthus",
-    "Theron",
-    "Sylvaine",
-]
 
 # ======================
 #   Mission patterns
 # ======================
 
+# item, item_action, item_adjective
+# enemy, enemy_action, enemy_adjective
+# location, location_action, location_adjective,
+# names, fractions, person_actions, after_action?
+
+
 patterns = [
-    "{action_enemie} the {enemy} in the {location}",
-    "{action_item} the {name}'s {item} in the {location}",
-    "{action_item} the {term_item} {item} in the {location}",
-    "{action_location} the {term_location} {location}",
-    "{action_enemie} the {term_enemie} {enemy}",
-    "{action_item} the {term_item} {item} from the {term_location} {location}",
-    "{action_enemie} the {term_enemie} {enemy} lurking in the {term_location} {location}",
-    "{action_location} the {term_location} {location} to uncover its secrets",
-    "{action_item} the {item} before the {term_enemie} {enemy} claims it",
-    "{action_enemie} the {enemy} that guards the {term_item} {item}",
-    "{person_action} {ally} {after_action}",
-    "{person_action} {enemy} {after_action}",
-    "{person_action} {faction} {after_action}",
-    "{person_action} {name} {after_action}",
-    "{action_item} the {term_item} {item} in the {location} {after_action}",
-    "{action_enemie} the {term_enemie} {enemy} {after_action}",
-    "{action_location} the {term_location} {location} {after_action}",
+    "{item_action} the {name}'s {item}",
+    "{item_action} the {item_adjective} {item}",
+    "{item_action} the {fraction}'s {item}",
+    "{item_action} the {item_adjective} {item} at {location_adjective} {location}",
+    "{item_action} the {name}'s {item} at {location_adjective} {location}",
+    "{item_action} the {fraction}'s {item} at {location_adjective} {location}",
+    "{enemy_action} the {enemy_adjective} {enemy}",
+    "{enemy_action} the {enemy_adjective} {enemy} at {location_adjective} {location}",
+    "{enemy_action} the {enemy_adjective} {enemy} at {location_adjective} {location} {after action}",
+    "{enemy_action} the {enemy_adjective} {enemy} with {name}",
+    "{enemy_action} the {enemy_adjective} {enemy} with {name} at {location_adjective} {location}",
+    "{enemy_action} the {enemy_adjective} {enemy} with {name} at {location_adjective} {location} {after action}",
+    "{enemy_action} the {enemy_adjective} {enemy} with {fraction}",
+    "{enemy_action} the {enemy_adjective} {enemy} with {fraction} at {location_adjective} {location}",
+    "{enemy_action} the {enemy_adjective} {enemy} with {fraction} at {location_adjective} {location} {after action}",
+    "{location_action} the {location_adjective} {location}",
+    "{location_action} the {location_adjective} {location} with {name}",
+    "{location_action} the {location_adjective} {location} with {fraction}",
+    "{person_action} {name} at {location_adjective} {location}",
+    "{person_action} {fraction} at {location_adjective} {location}"
+    "{person_action} {name} with {fraction} at {location_adjective} {location}",
+    "{person_action} {fraction} with {name} at {location_adjective} {location}",
 ]
 
 
 def generate_random_mission(session: Session) -> Mission:
     import random
 
-    mission = random.choice(patterns)
-    mission = mission.format(
-        action_item=random.choice(actions_items),
-        term_item=random.choice(terms_items),
+    pattern = random.choice(patterns)
+    mission = pattern.format(
         item=random.choice(items),
+        item_action=random.choice(item_actions),
+        item_adjective=random.choice(item_adjectives),
         location=random.choice(locations),
-        action_enemie=random.choice(actions_enemies),
-        enemy=random.choice(enemies),
-        term_enemie=random.choice(terms_enemies),
-        action_location=random.choice(actions_locations),
-        term_location=random.choice(terms_locations),
-        faction=random.choice(factions),
-        ally=random.choice(allies),
-        disaster=random.choice(disasters),
-        obstacle=random.choice(obstacles),
-        reward=random.choice(rewards),
-        mystical_force=random.choice(mystical_forces),
-        person_action=random.choice(person_actions),
-        after_action=random.choice(after_actions),
+        location_action=random.choice(location_actions),
+        location_adjective=random.choice(location_adjective),
         name=random.choice(names),
+        fraction=random.choice(fractions),
+        enemy=random.choice(enemies),
+        enemy_action=random.choice(enemy_actions),
+        enemy_adjective=random.choice(enemy_adjectives),
+        after_action=random.choice(after_actions),
     )
-    return create_mission(session, description=mission)
+
+    min_champions = max(sum([1 for i in pattern if i == "{"]) - 2, 1)
+    max_champions = np.random.randint(min_champions, min_champions * 4)
+    duration = int(max_champions**1.618)
+    mu = 75
+    sigma = 100
+    power = 0
+    for _ in range(min_champions):
+        power += int(abs(np.random.normal(mu, sigma)))
+
+    return create_mission(
+        session,
+        description=mission,
+        level=power,
+        total_duration=duration,
+        min_champions=min_champions,
+        max_champions=max_champions,
+    )
