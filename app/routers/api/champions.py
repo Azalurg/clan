@@ -1,11 +1,14 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
+from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import selectinload
 from sqlmodel import Session, select
+from fastapi.responses import HTMLResponse
 
 from app.database import engine
 from app.models.champions import Champion
 
 router = APIRouter(prefix="/champions", tags=["champions"])
+templates = Jinja2Templates(directory="templates")
 
 
 @router.get("/")
@@ -32,3 +35,10 @@ def get_champions():
         }
         for champ in champions
     ]
+
+
+@router.get("/templates", response_class=HTMLResponse)
+def get_champions_list_templates(request: Request):
+    context = {"champions": get_champions()}
+    print(context)
+    return templates.TemplateResponse(request=request, name="champions.j2", context=context)

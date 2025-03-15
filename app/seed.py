@@ -52,10 +52,9 @@ def create_random_champion(new_name):
         champion_class = random.choice(classes)
         profession = random.choice(professions)
 
-        mu = 0
-        sigma = 25000
-
-        experience = int(abs(np.random.normal(mu, sigma)))
+        shape = 0.55
+        scale = 75025
+        experience = int(np.random.gamma(shape, scale))
 
         champion = Champion(
             name=new_name,
