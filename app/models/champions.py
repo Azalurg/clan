@@ -1,7 +1,7 @@
 import enum
 from typing import Optional
 from uuid import UUID
-from sqlmodel import Field, Relationship
+from sqlmodel import Field, Relationship, SQLModel
 
 from app.models.shared import Entity
 
@@ -103,3 +103,25 @@ class Champion(Entity, AttributesMixin, table=True):
                 self.experience_to_next_level += self.level * 5 + 643
             else:
                 self.experience_to_next_level += self.level * 9 + 5465
+
+
+class ChampionResponse(SQLModel, table=False):
+    id: UUID
+    name: str
+    level: int
+    race: Optional[str]
+    champion_class: Optional[str]
+    profession: Optional[str]
+    clan: Optional[str]
+
+    @classmethod
+    def from_orm(cls, champ: Champion):
+        return cls(
+            id=champ.id,
+            name=champ.name,
+            level=champ.level,
+            race=champ.race.name,
+            champion_class=champ.champion_class.name,
+            profession=champ.profession.name,
+            clan=champ.clan.name if champ.clan else None,
+        )

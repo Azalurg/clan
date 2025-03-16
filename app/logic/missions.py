@@ -1,8 +1,11 @@
+# pylint: disable=line-too-long
+
 import numpy as np
 from sqlmodel import Session
 
 from app.models import Mission
 from app.services.missions import create_mission
+
 
 items = [
     "sword",
@@ -243,7 +246,7 @@ fractions = [
 
 names = []
 
-with open("../data/raw/names.txt") as file:
+with open("../data/raw/names.txt", "r") as file:
     names = file.read().splitlines()
 
 person_actions = [
@@ -334,25 +337,23 @@ patterns = [
 
 
 def generate_random_mission(session: Session) -> Mission:
-    import random
-
-    pattern = random.choice(patterns)
+    pattern = np.random.choice(patterns)
     mission = pattern.format(
-        item=random.choice(items),
-        item_action=random.choice(item_actions),
-        item_adjective=random.choice(item_adjectives),
-        location=random.choice(locations),
-        location_action=random.choice(location_actions),
-        location_adjective=random.choice(location_adjective),
-        name=random.choice(names),
-        fraction=random.choice(fractions),
-        enemy=random.choice(enemies),
-        enemy_action=random.choice(enemy_actions),
-        enemy_adjective=random.choice(enemy_adjectives),
-        after_action=random.choice(after_actions),
+        item=np.random.choice(items),
+        item_action=np.random.choice(item_actions),
+        item_adjective=np.random.choice(item_adjectives),
+        location=np.random.choice(locations),
+        location_action=np.random.choice(location_actions),
+        location_adjective=np.random.choice(location_adjective),
+        name=np.random.choice(names),
+        fraction=np.random.choice(fractions),
+        enemy=np.random.choice(enemies),
+        enemy_action=np.random.choice(enemy_actions),
+        enemy_adjective=np.random.choice(enemy_adjectives),
+        after_action=np.random.choice(after_actions),
     )
 
-    min_champions = max(sum([1 for i in pattern if i == "{"]) - 2, 1)
+    min_champions = max(sum(1 for i in pattern if i == "{") - 2, 1)
     max_champions = np.random.randint(min_champions, min_champions * 4)
     duration = int(max_champions**1.618)
     mu = 75

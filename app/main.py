@@ -1,14 +1,16 @@
-import uvicorn
+# pylint: disable=line-too-long
 
+
+from time import sleep
 from dotenv import load_dotenv
 from fastapi import FastAPI
-from time import sleep
 
+import uvicorn
+
+from app.routers.api import api_router
 
 load_dotenv()
 
-
-from app.routers.api import api_router
 
 app = FastAPI(docs_url="/docs", debug=True)
 
