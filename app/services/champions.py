@@ -10,3 +10,7 @@ def get_unaffiliated_champions(session: Session, limit: int = 20):
 
 def get_clans_champions(session: Session, clan_id: UUID):
     return session.exec(select(Champion).where(Champion.clan_id == clan_id)).all()
+
+
+def get_champion_by_id(session: Session, champion_id: UUID):
+    return session.exec(select(Champion).where(Champion.id == champion_id)).first()

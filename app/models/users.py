@@ -1,8 +1,10 @@
-from typing import Optional
+from datetime import datetime
+from typing import Optional, Type, Any, Dict
 from uuid import UUID
 
 from passlib.context import CryptContext
-from sqlmodel import Field, Relationship
+from sqlmodel import Field, Relationship, SQLModel
+from sqlmodel.main import _TSQLModel
 
 from app.models.shared import Entity
 
@@ -28,3 +30,31 @@ class User(Entity, table=True):
 
     clan_id: Optional[UUID] = Field(default=None, foreign_key="clan.id", unique=True)
     clan: Optional[Clan] = Relationship(back_populates="users")
+
+
+class ClanResponse(SQLModel, table=False):
+    id: UUID
+    name: str
+    create_date: datetime
+    age: str
+    users_count: int
+    champions_count: int
+
+    @classmethod
+    def from_orm(cls, obj: Clan):
+        now = datetime.now()
+        delta = now - obj.created_at
+
+        years = delta.days // 365
+        days = delta.days % 365
+        hours = delta.seconds // 3600
+
+        age = f"{years} year{'s' if years != 1 else ''} {days} day{'s' if days != 1 else ''} {hours} hour{'s' if hours != 1 else ''}"
+        return cls(
+            id=obj.id,
+            name=obj.name,
+            create_date=obj.created_at,
+            age=age,
+            users_count=len(obj.users),
+            champions_count=len(obj.champions),
+        )
